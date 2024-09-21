@@ -28,6 +28,18 @@
   font-family: 'fat';
 
 }
+@media (max-width: 786px) {
+  .contenedorcontador {
+    width: 100%;
+    margin-left: 0; /* Ajusta el margen si es necesario */
+  }
+  .contenedordetexto{
+    width: 100%;
+    margin-left: 0px;
+    text-align: start;
+    line-height: 90%;
+  }
+}
 h1 {
   font-size: 18px;
   color: #f8f8f8;
