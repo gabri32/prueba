@@ -16,8 +16,10 @@ const Home: React.FC = () => {
         { label: 'FAQ', icon: 'pi pi-fw pi-question', url: '#faq' }
     ];
 
-    // Configurar la cuenta regresiva a 45 días
-    const countdownDate = Date.now() + 45 * 24 * 60 * 60 * 1000;
+    const startDate = new Date('2024-10-04').getTime();
+    
+    // Fecha límite: 30 días después del 4 de octubre 2024
+    const countdownDate = startDate + 30 * 24 * 60 * 60 * 1000;
 
     const countdownRenderer = ({ days, hours, minutes, seconds }: any) => {
         return (
