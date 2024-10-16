@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.44da08b2.css",
-    "main.js": "/static/js/main.f6357f02.js",
+    "main.css": "/static/css/main.4055ad42.css",
+    "main.js": "/static/js/main.6aced7e9.js",
     "static/js/453.e9a0cd7c.chunk.js": "/static/js/453.e9a0cd7c.chunk.js",
+    "static/media/niebla 1.png": "/static/media/niebla 1.8267c4652c9f67d73a54.png",
     "static/media/primeicons.svg": "/static/media/primeicons.6ed59f962963a4a73af2.svg",
     "static/media/primeicons.eot": "/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
     "static/media/primeicons.woff": "/static/media/primeicons.8931fda1930c3bd21e96.woff",
@@ -10,12 +11,12 @@
     "static/media/BaiJamjuree-Bold.ttf": "/static/media/BaiJamjuree-Bold.da1cfc75e1ff64984f88.ttf",
     "static/media/primeicons.woff2": "/static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "index.html": "/index.html",
-    "main.44da08b2.css.map": "/static/css/main.44da08b2.css.map",
-    "main.f6357f02.js.map": "/static/js/main.f6357f02.js.map",
+    "main.4055ad42.css.map": "/static/css/main.4055ad42.css.map",
+    "main.6aced7e9.js.map": "/static/js/main.6aced7e9.js.map",
     "453.e9a0cd7c.chunk.js.map": "/static/js/453.e9a0cd7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44da08b2.css",
-    "static/js/main.f6357f02.js"
+    "static/css/main.4055ad42.css",
+    "static/js/main.6aced7e9.js"
   ]
 }
