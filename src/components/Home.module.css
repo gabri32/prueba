@@ -3,43 +3,68 @@
   width: 100%;
   padding: 0;
   margin: 0;
- color: #fff;
+  height: 100vh; /* Alto completo de la pantalla */
+  background-color: #093763; /* Color de fondo base */
+  
+  background-image: 
+    linear-gradient(to top left, rgba(113, 85, 196, 0.8), rgba(113, 85, 196, 0) 50%), /* Gradiente */
+    url('niebla 1.png'); /* Imagen de fondo */
+
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repetición */
+  background-size: cover; /* Imagen cubre todo el contenedor */
+  color: #fff;
+}
+.container2{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* Alto completo de la pantalla */
+  background-color: #093763; /* Color de fondo base */
+  
+  background-image: 
+    linear-gradient(to top left, rgba(113, 85, 196, 0.8), rgba(113, 85, 196, 0) 50%), /* Gradiente */
+    url('niebla 1.png'); /* Imagen de fondo */
+
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repetición */
+  background-size: cover; /* Imagen cubre todo el contenedor */
+  color: #fff;
 }
 @font-face {
 	font-family: 'fat';
 	src: url(traishunt/public/Bai_Jamjuree/BaiJamjuree-Bold.ttf);
   }
 .cuerpo {
-  text-align: center;
   padding: 20px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 .contenedordetexto{
-  width: 10%;
-  margin-left: 27%;
+  margin-left:10%;
   text-align: start;
   line-height: 90%;
 }
 .contenedorcontador {
   border-radius: 10px;
-  border: 2px solid #70db70; /* Cambia el color a verde claro */
-  width: 50%;
+  width: 80%;
+  margin-bottom: 0%;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-  margin-left: 27%;
+  margin-left: 10%;
   font-family: 'fat';
+  background-color: #060C18;
+  margin-bottom: -5%;
+  position:relative; z-index:3;
+   opacity:1}
+.cuerpo img{
+  margin-left: 10%;
+  width: 50%;
+}
+.cuerpo p{
+  text-align: start;
+  width: 30%;
+  margin-left: 10%;
+}
 
-}
-@media (max-width: 786px) {
-  .contenedorcontador {
-    width: 100%;
-    margin-left: 0; /* Ajusta el margen si es necesario */
-  }
-  .contenedordetexto{
-    width: 100%;
-    margin-left: 0px;
-    text-align: start;
-    line-height: 90%;
-  }
-}
 h1 {
   font-size: 18px;
   color: #f8f8f8;
@@ -48,61 +73,52 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 10px;
+  color: #07EFBD;
+  text-align: center;
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+button{
+  background-color: #07EFBD;
+  margin-left: 10%;
+  color: #060C18;
+  font-size: 140%;
+  padding-inline-start: 3%;
+  padding-inline-end: 3%;
 
+}
 button.p-button {
-  background-color: #a4ff00;
+  background-color: #07EFBD;
   border: none;
   margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
 }
 
-.dots {
-  display: flex;
-  flex-direction: column; /* Alinea los puntos y el texto en columna */
-  justify-content: center;
-  align-items: center; /* Centra los puntos horizontalmente */
-  text-align: center;
-  margin: 20px 0;
-  gap: 10px; /* Espacio entre puntos y texto */
-}
 
-.dots p {
-  text-align: center; /* Centra el texto horizontalmente */
-  max-width: calc(100% - 40px); /* Ajusta el ancho máximo */
-  margin: 0 auto; /* Centra el texto */
-  font-size: 16px; /* Tamaño de fuente */
-  line-height: 1.5; /* Interlineado */
-  color: #fff; /* Color del texto */
-}
-
-.dots span {
-  display: block; /* Cambia a block para que los puntos queden en columna */
-  width: 8px;
-  height: 8px;
-  background-color: rgb(102, 255, 0); /* Color del punto */
-  border-radius: 50%;
-  margin: 10px 0; /* Espacio entre puntos */
-}
 
 .countdown {
   display: flex;
   justify-content: center; /* Centra los elementos horizontalmente */
   align-items: center;
-  font-size: 44px;
+  font-size: 44%;
   color: rgb(253, 253, 253); /* Centra los elementos verticalmente dentro de cada div */
 }
 .countdown p {
-  color: #a4ff00;
-  font-size: 15px;
+  color: #09e3b5;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+.countdown span {
+  color: #ffffff;
+  font-size: 5vw;
+  font-weight: 0%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
@@ -110,9 +126,6 @@ button.p-button {
   text-align: center;
   margin: 0 10px; /* Añade un margen horizontal para separar los elementos */
 }
-
-
-
 a {
   color: #a4ff00;
   font-size: 18px;

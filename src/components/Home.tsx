@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import letterTrainsImage from './letter_trains.png';
+import letterTrainsImage from './Traishunt.png';
 
 import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
@@ -50,37 +50,25 @@ const Home: React.FC = () => {
             <Menubar model={items} className={styles.menubar} />
 
             <div className={styles.cuerpo}>
+                <br />
+                <br />
                 <div className={styles.contenedordetexto}>
                     <h1>Desbloquea <br /> el <br /> futuro</h1>
                 </div>
 
                 <img src={letterTrainsImage} alt="Traishunt Logo" />
-                <p>Sé parte de la revolución en Finanzas descentralizadas</p>
-
+                <p>Sé parte de la revolución <br />en Finanzas descentralizadas</p>
+                <Button label="Participa Preventa" className="p-button-rounded " />
                 {/* Contador con cuenta regresiva */}
+                <br />
+                <br /><br />
                 <div className={styles.contenedorcontador}>
                 <Countdown date={countdownDate} renderer={countdownRenderer} />
-                </div>
-                
-<br />
-                {/* Botón Preventa */}
-                <Button label="Participa Preventa" className="p-button-rounded p-button-success" />
-
-                {/* Dots */}
-                <div className={styles.dots}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <p>Traishunt es una criptomoneda diseñada para transformar <br /> la interacción con las finanzas descentralizadas (DeFi). <br />Aprovecha esta oportunidad única de ser parte de su <br /> crecimiento desde la preventa.</p>
-                   <br />
-                    <span></span>
-                    <span></span>
-                </div>
-
-                {/* Roadmap Link */}
-                <a href="#roadmap">Roadmap</a>
-                <p>Estamos en el mejor momento trabajando para dar a conocer este expectacular proyecto proximamente equipo traishumt.com</p>
+                </div>              
+            </div>
+            <div className={styles.container2}>
+           
+               
             </div>
         </div>
     );

@@ -11,8 +11,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  align-items: center;
-  background: linear-gradient(164.14deg, #064A28 1.72%, #030707 80.02%);
+  background: black;
+  
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
