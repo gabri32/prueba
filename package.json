@@ -16,7 +16,7 @@
     "@types/react-dom": "^18.3.0",
     "bootstrap": "^5.3.3",
     "primeicons": "^7.0.0",
-    "primeng": "^17.18.10",
+    "primeng": "^17.18.11",
     "primereact": "^10.8.3",
     "react": "^18.3.1",
     "react-countdown": "^2.3.6",

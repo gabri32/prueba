@@ -7,7 +7,7 @@
   background-color: #093763; /* Color de fondo base */
   
   background-image: 
-    linear-gradient(to top left, rgba(113, 85, 196, 0.8), rgba(113, 85, 196, 0) 50%), /* Gradiente */
+    linear-gradient(to top left, rgb(107, 76, 201), rgba(113, 85, 196, 0.17) 50%), /* Gradiente */
     url('niebla 1.png'); /* Imagen de fondo */
 
   background-position: center; /* Centra la imagen */
@@ -19,17 +19,128 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 100vh; /* Alto completo de la pantalla */
+  height: 1247px; /* Alto completo de la pantalla */
   background-color: #093763; /* Color de fondo base */
   
   background-image: 
     linear-gradient(to top left, rgba(113, 85, 196, 0.8), rgba(113, 85, 196, 0) 50%), /* Gradiente */
-    url('niebla 1.png'); /* Imagen de fondo */
+    url('2.png'); /* Imagen de fondo */
 
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Imagen cubre todo el contenedor */
   color: #fff;
+}
+.overlayimage {
+  position: absolute;
+  left: 15%; /* Despega la imagen del borde izquierdo */
+  transform: translateY(10%); /* Ajusta la posición para centrar correctamente */
+  width: 100px; /* Controla el tamaño de la imagen */
+  height: auto;
+  z-index: 0; /* Asegura que esté encima del fondo */
+
+}
+.bloquemap {
+  position: relative;
+  width: 78%;
+  height: 500px;
+  margin-left: 11%; /* Centra horizontalmente el contenedor */
+  background: linear-gradient(to bottom, #0B336FE5 0%, #040F21E5 110%);
+  border-radius: 10px;
+
+  display: flex;             /* Activa Flexbox */
+  flex-direction: column;    /* Coloca los elementos en columna (imagen arriba, texto abajo) */
+  justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center;       /* Alinea los elementos horizontalmente al centro */
+  text-align: center;        /* Asegura que el texto esté centrado dentro del párrafo */
+}
+
+.bloquemap img {
+  width: 60%;
+  margin-bottom: 20px; /* Espacio abajo */
+}
+
+
+.bloquemap p {
+  margin-top: 15px;       /* Espacio entre la imagen y el texto */
+  margin-left: 8%;        /* Espacio a la izquierda */
+  margin-right: 8%;       /* Espacio a la derecha */
+  padding: 0 20px;         /* Evita que el texto toque los bordes */
+  display: block;          
+  color: #f8f8f8;          
+  font-size: 140%;         /* Aumenta el tamaño del texto */
+}
+.bloquemap span {
+          
+  color: #04F1A9;          
+}
+/* Estilo del contenedor del slider */
+.slidercontainer {
+  width: 75%;
+  margin: 50px auto;
+  overflow-x: auto; /* Permite el desplazamiento horizontal */
+  overflow-y: hidden; /* Evita el desplazamiento vertical */
+  display: flex;
+  align-items: center;
+  scrollbar-width: thin; /* Estilo para navegadores Firefox */
+  scrollbar-color: #04F1A9 transparent; /* Color para la scrollbar en Firefox */
+}
+
+/* Estilo para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Edge) */
+.slider-container::-webkit-scrollbar {
+  height: 8px; /* Altura de la barra de desplazamiento */
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+  background-color: #131313; /* Color del scrollbar */
+  border-radius: 10px;
+}
+
+.slider-container::-webkit-scrollbar-track {
+  background-color: transparent; /* Fondo de la barra de desplazamiento */
+}
+
+/* Slider que contiene las cards */
+.slider {
+  display: flex;
+  gap: 15px;
+}
+
+/* Estilo de cada card */
+.card {
+  min-width: 351px;
+  height: 491px;
+  background-color: #101A3E;
+  color: white;
+            /* Activa Flexbox */
+  flex-direction: column;    /* Coloca los elementos en columna (imagen arriba, texto abajo) */
+  justify-content: start;  
+  box-shadow: 0 1px 10px rgba(36, 198, 213, 0.562);
+  font-size: 1.4rem;
+  border-radius: 10px;
+  z-index: 3; 
+}
+.card h1 {
+  margin-left: 10%;
+  font-weight: bolder;
+  font-size: 120%;
+  text-shadow: 1px 1px 0px rgb(255, 255, 255), 
+  -1px 1px 0px rgba(255, 255, 255, 0.203), 
+  1px -1px 0px rgba(255, 255, 255, 0), 
+  -1px -1px 0px rgba(255, 255, 255, 0);
+  margin-bottom: 5px; /* Ajusta el margen inferior */
+}
+
+.card h5 {
+  margin-top: 2px; /* Ajusta el margen superior */
+  margin-left: 10%; 
+  color: #04F1A9;
+  font-weight:600;
+  margin-bottom:-10px;
+}
+.card img{
+  margin-left: 8%;
+  margin-top: 0px;
 }
 @font-face {
 	font-family: 'fat';
