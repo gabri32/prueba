@@ -19,11 +19,11 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 1247px; /* Alto completo de la pantalla */
+  height: 1447px; /* Alto completo de la pantalla */
   background-color: #093763; /* Color de fondo base */
   
   background-image: 
-    linear-gradient(to top left, rgba(113, 85, 196, 0.8), rgba(113, 85, 196, 0) 50%), /* Gradiente */
+   
     url('2.png'); /* Imagen de fondo */
 
   background-position: center; /* Centra la imagen */
@@ -35,7 +35,7 @@
   position: absolute;
   left: 15%; /* Despega la imagen del borde izquierdo */
   transform: translateY(10%); /* Ajusta la posición para centrar correctamente */
-  width: 100px; /* Controla el tamaño de la imagen */
+  width: 99px; /* Controla el tamaño de la imagen */
   height: auto;
   z-index: 0; /* Asegura que esté encima del fondo */
 
@@ -83,27 +83,39 @@
   display: flex;
   align-items: center;
   scrollbar-width: thin; /* Estilo para navegadores Firefox */
-  scrollbar-color: #04F1A9 transparent; /* Color para la scrollbar en Firefox */
+  scrollbar-color: #04F1A9 transparent;
+  z-index: 3; /* Color para la scrollbar en Firefox */
 }
 
 /* Estilo para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Edge) */
 .slider-container::-webkit-scrollbar {
-  height: 8px; /* Altura de la barra de desplazamiento */
+  height: 8px;
+  z-index: 3; /* Altura de la barra de desplazamiento */
 }
 
 .slider-container::-webkit-scrollbar-thumb {
   background-color: #131313; /* Color del scrollbar */
   border-radius: 10px;
+  z-index: 3;
 }
 
 .slider-container::-webkit-scrollbar-track {
-  background-color: transparent; /* Fondo de la barra de desplazamiento */
+  background-color: transparent; 
+  z-index: 3;/* Fondo de la barra de desplazamiento */
 }
-
+.letrafooter{
+  font-size:medium ;
+margin-left: 10%;
+  margin-top: 2%;
+  color: #07EFBD;
+  text-align: center;    
+  max-width: 80%;     
+}
 /* Slider que contiene las cards */
 .slider {
   display: flex;
   gap: 15px;
+  z-index: 3;
 }
 
 /* Estilo de cada card */
@@ -130,7 +142,14 @@
   -1px -1px 0px rgba(255, 255, 255, 0);
   margin-bottom: 5px; /* Ajusta el margen inferior */
 }
-
+.card h6 {
+  margin-top: 5%; /* Ajusta el margen superior */
+  margin-left: 10%; 
+  color: #04F1A9;
+  font-weight:600;
+  font-size: 65%;
+  margin-bottom: auto;
+}
 .card h5 {
   margin-top: 2px; /* Ajusta el margen superior */
   margin-left: 10%; 
@@ -138,10 +157,86 @@
   font-weight:600;
   margin-bottom:-10px;
 }
+.card p {
+  font-size: medium;
+  margin-left: 10%; 
+  color: #ffffff;
+  font-weight:100;
+  text-align: start;
+max-width: 80%;
+font-size: 60%;
+margin-top: auto;
+}
 .card img{
   margin-left: 8%;
   margin-top: 0px;
 }
+.custombutton {
+  background-color: #2de6b5;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width:80%;
+  margin-bottom: 1%;
+}
+
+.buttoncontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.buttoncontent span {
+ margin-left: 10%;
+ font-size: medium;
+  width: 80%;
+}
+.phase {
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: start;
+}
+.value{
+  background-color: #04F1A9;
+  width:12%;
+  border-radius: 20%;
+}
+.phase span {
+  font-size: 12px;
+  color: #444;
+  
+}
+
+.divider {
+  width: 2px;
+  height: 40px; /* Ajusta la altura de la línea */
+  background-color: #000; /* Color de la línea */
+  margin: 0 10px; /* Espaciado a los lados */
+}
+.CoinGecko{
+  color: #04F1A9;
+  font-weight: 900;
+}
+.tokens {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.tokens::after {
+  
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+}
+
 @font-face {
 	font-family: 'fat';
 	src: url(traishunt/public/Bai_Jamjuree/BaiJamjuree-Bold.ttf);
@@ -257,4 +352,90 @@ a:hover {
 /* Asegura que los elementos del menú se mantengan en una sola fila */
 .menubar .p-menubar-root-list {
   flex-direction: row; /* Asegura que el menú esté en una fila horizontal */
+}
+.container3 {
+  background-image: 
+    linear-gradient(to top left, rgba(255, 255, 255, 0) 12%, #0bebc3),
+    url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repetición */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+  height: 1005px; /* Asegúrate de tener una altura definida */
+}
+
+.container3_1 {
+  height: 1005px;
+  border-radius: 3%;
+  width: 975px;
+  background: linear-gradient(to top left,  rgb(87, 47, 168) 5%,#0bebc2);
+  margin-left: 25%;
+  margin-top: -10%;
+  position: absolute;
+  text-align: center;
+}
+.container3_1 img{
+  margin-top: 30px;       /* Espacio entre la imagen y el texto */
+  margin-left: 35%;        /* Espacio a la izquierda */
+  margin-right: 8%;       /* Espacio a la derecha */
+  padding: 0 20px;         /* Evita que el texto toque los bordes */
+  display: block;          
+  color: #f8f8f8;          
+  font-size: 140%;   
+  margin-bottom: 0px; 
+}
+.container3_1 span{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.tokencardscontainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px; /* Espaciado entre tarjetas */
+  padding: 80px;
+ 
+}
+
+.tokencard {
+  background-color: #00d2c4;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+ 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+margin-left: 13%;
+  margin-bottom: 15px;
+}
+
+.content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #000;
+}
+.p-accordion .p-accordion-header {
+  background-color: #0f1437;
+  color: rgb(255, 0, 0);
+  border: none;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-text {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-accordion .p-accordion-content {
+  background-color: #0f1437;
+  color: rgb(250, 0, 0);
 }
