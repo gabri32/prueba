@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.2e77defe.css",
-    "main.js": "/static/js/main.037e6d3a.js",
+    "main.css": "/static/css/main.2e3fa720.css",
+    "main.js": "/static/js/main.83ddd861.js",
     "static/js/453.e9a0cd7c.chunk.js": "/static/js/453.e9a0cd7c.chunk.js",
     "static/media/2.png": "/static/media/2.135eee55d47e7af6d0f2.png",
+    "static/media/fondo 3 1.png": "/static/media/fondo 3 1.b5fc6da008683aa74828.png",
     "static/media/niebla 1.png": "/static/media/niebla 1.8267c4652c9f67d73a54.png",
     "static/media/primeicons.svg": "/static/media/primeicons.6ed59f962963a4a73af2.svg",
     "static/media/primeicons.eot": "/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
@@ -14,12 +15,12 @@
     "static/media/primeicons.woff2": "/static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "static/media/Bienvenidos a Traishunt (dex)@2x.png": "/static/media/Bienvenidos a Traishunt (dex)@2x.7225dd4f4934783c7591.png",
     "index.html": "/index.html",
-    "main.2e77defe.css.map": "/static/css/main.2e77defe.css.map",
-    "main.037e6d3a.js.map": "/static/js/main.037e6d3a.js.map",
+    "main.2e3fa720.css.map": "/static/css/main.2e3fa720.css.map",
+    "main.83ddd861.js.map": "/static/js/main.83ddd861.js.map",
     "453.e9a0cd7c.chunk.js.map": "/static/js/453.e9a0cd7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e77defe.css",
-    "static/js/main.037e6d3a.js"
+    "static/css/main.2e3fa720.css",
+    "static/js/main.83ddd861.js"
   ]
 }
