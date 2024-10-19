@@ -14,7 +14,13 @@
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Imagen cubre todo el contenedor */
   color: #fff;
+
+
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+ 
 }
+
 .container2{
   width: 100%;
   padding: 0;
@@ -355,31 +361,37 @@ a:hover {
 }
 .container3 {
   background-image: 
-    linear-gradient(to top left, rgba(255, 255, 255, 0) 12%, #0bebc3),
+    linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
     url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-  height: 1005px; /* Asegúrate de tener una altura definida */
+  height: 1750px; /* Asegúrate de tener una altura definida */
+  justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center;       /* Alinea los elementos horizontalmente al centro */
+  text-align: center;   
 }
 
 .container3_1 {
-  height: 1005px;
+  height: 100vh;
   border-radius: 3%;
-  width: 975px;
+  width: 50%;
   background: linear-gradient(to top left,  rgb(87, 47, 168) 5%,#0bebc2);
   margin-left: 25%;
   margin-top: -10%;
   position: absolute;
-  text-align: center;
+  justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center;       /* Alinea los elementos horizontalmente al centro */
+  text-align: center;  
+  	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); 
 }
 .container3_1 img{
   margin-top: 30px;       /* Espacio entre la imagen y el texto */
-  margin-left: 35%;        /* Espacio a la izquierda */
-  margin-right: 8%;       /* Espacio a la derecha */
-  padding: 0 20px;         /* Evita que el texto toque los bordes */
+  padding: 0 40vh;         /* Evita que el texto toque los bordes */
   display: block;          
-  color: #f8f8f8;          
+  color: #f8f8f8;  
+  justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center;       /* Alinea los elementos horizontalmente al centro */  
   font-size: 140%;   
   margin-bottom: 0px; 
 }
@@ -400,7 +412,7 @@ a:hover {
   background-color: #00d2c4;
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  width: 250px;
+  width: 32%;
   padding: 20px;
  
   text-align: center;
@@ -408,8 +420,9 @@ a:hover {
 }
 
 .icon img {
-margin-left: 13%;
+
   margin-bottom: 15px;
+  padding: 0 6vh;  
 }
 
 .content h3 {
@@ -423,19 +436,203 @@ margin-left: 13%;
   font-size: 14px;
   color: #000;
 }
-.p-accordion .p-accordion-header {
-  background-color: #0f1437;
-  color: rgb(255, 0, 0);
-  border: none;
+
+/* Contenedor del acordeón */
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.p-accordion .p-accordion-header .p-accordion-header-text {
-  font-size: 18px;
+/* Elemento del acordeón */
+.accordionitem {
+  background-color: #0a0c23;
+  border: 2px solid #00e5b4;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Encabezado del acordeón */
+.accordionheader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #0a0c23;
 }
 
-.p-accordion .p-accordion-content {
-  background-color: #0f1437;
-  color: rgb(250, 0, 0);
+.accordionheader strong {
+  color: #ffffff;
+}
+
+.tokens {
+  color: #00e5b4;
+  font-weight: bold;
+}
+
+.toggleicon {
+  color: #00e5b4;
+  transition: transform 0.3s ease;
+}
+
+/* Contenido del acordeón */
+.accordioncontent {
+  padding: 15px 20px;
+  background-color: #0a0c23;
+  border-top: 1px solid #00e5b4;
+  display: none;
+}
+
+.accordioncontent p {
+  margin: 0;
+  color: #a6b0d3;
+}
+
+/* Estilos para el acordeón abierto */
+.accordionitem.open .accordioncontent {
+  display: block;
+}
+
+.accordionitem.open .toggleicon {
+  transform: rotate(180deg);
+}
+/* FIN Contenedor del acordeón */
+.container3_2{
+
+  position:absolute;
+  width: 100%;
+ height: 100%;
+   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center;       /* Alinea los elementos horizontalmente al centro */
+  text-align: center;    
+}
+.container3_2 img{
+
+width: 50%;
+   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center;       /* Alinea los elementos horizontalmente al centro */
+  text-align: center;    
+}
+.vectorfull{
+  margin-top: 40%;
+}
+
+/*Banner*/
+.banner {
+  top: 50%;
+  display: flex;
+  background-color: #0f1e36;
+  border-radius: 15px;
+  padding: 30px;
+  width: 80%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 10vw;
+  height: 59%;
+  position: relative;
+}
+
+.banner .imageSection {
+  flex: 1;
+width: 200px;
+
+
+}
+
+.banner .coupleImage {
+  left: -100px;
+  width: 500px;
+  position: relative;
+  
+}
+
+.banner .contentSection {
+  flex: 2;
+  padding-left: 30px;
+}
+
+.banner h1 {
+  font-size: 32px;
+  color: #22ffb3;
+  margin-bottom: 10px;
+  line-height: 30%;
+  text-align: end;
+}
+
+.titlepcontent  {
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 90%;
+  color: #ffffff;
+  text-align: end;
+}
+.titlepcontent2{
+  color: #00af89;
+  font-size: 17px;
+  line-height: 90%;
+}
+.banner .benefits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.banner .benefitItem {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.banner .benefitItem img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.banner .benefitItem h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.banner .ctaButton {
+  margin-top: 1%;
+  padding: 5px 30px;
+  background-color: #22ffb3;
+  color: #0d2747;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+  left: 20%;
+}
+
+.banner .ctabutton:hover {
+  background-color: #1cd89d;
+}
+.container4 {
+  background-image: 
+      /* Primer gradiente (arriba derecha) */
+      linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
+      /* Segundo gradiente (arriba izquierda) */
+      linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
+      /* Imagen de fondo */
+      url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+  
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repetición */
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+  height: 1750px; /* Asegúrate de tener una altura definida */
+  display: flex; /* Asegúrate de que el contenedor use flexbox */
+  justify-content: center; /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  text-align: center;   
+}
+.walletconection{
+  justify-content: center; /* Centra verticalmente el contenido dentro del contenedor */
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  text-align: center;  
 }

@@ -11,35 +11,44 @@ import separator from './Vector 4.png'
 import mati from './Polygon MATIC Icon 2.png'
 import mati3 from './Polygon MATIC Icon 3.png'
 import traisblack from './Traishunt (1).png'
-import { Accordion, AccordionTab } from 'primereact/accordion';
 import tokennomits from './Tokenomics.png'
+import diagram from './diagram.png'
+import pareja from './pareja 1.png'
+import one from './copa.png'
+import two from './monay.png'
+import three from './coins.png'
+import four from './capacitation.png'
 import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
+import { useEffect, useRef } from 'react';
 const Home: React.FC = () => {
   const items = [
     { label: 'Roadmap', icon: 'pi pi-fw pi-map', url: '#roadmap' },
     { label: 'Prevente', icon: 'pi pi-fw pi-tags', url: '#prevente' },
     { label: 'FAQ', icon: 'pi pi-fw pi-question', url: '#faq' }
   ];
-  const MyAccordion = () => {
-    return (
-        <Accordion>
-            <AccordionTab header="5% Pre-venta: 1.050.000 tokens">
-                <strong>Objetivo:</strong> Recaudar fondos iniciales para el desarrollo del proyecto.
-            </AccordionTab>
-
-            <AccordionTab header="25% DEX (Liquidity Pool): 5.250.000 tokens">
-                Contenido adicional sobre DEX.
-            </AccordionTab>
-
-            <AccordionTab header="5% Promoción y Marketing: 1.050.000 tokens">
-                Contenido adicional sobre Promoción y Marketing.
-            </AccordionTab>
-        </Accordion>
-    );
-}
+  const accordionRef = useRef<HTMLDivElement>(null);
   const startDate = new Date('2024-10-04').getTime();
+  useEffect(() => {
+    const headers = accordionRef.current?.querySelectorAll('.accordion-header');
 
+    headers?.forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item?.classList.toggle('open'); // Añade o quita la clase 'open'
+      });
+    });
+
+    // Limpieza del efecto: Remover los listeners al desmontar el componente
+    return () => {
+      headers?.forEach(header => {
+        header.removeEventListener('click', () => {
+          const item = header.parentElement;
+          item?.classList.toggle('open');
+        });
+      });
+    };
+  }, []);
   // Fecha límite: 30 días después del 4 de octubre 2024
   const countdownDate = startDate + 30 * 24 * 60 * 60 * 1000;
 
@@ -207,43 +216,134 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className={styles.container3}>
-      <div className={styles.container3_1}>
-        <span><img src={tokennomits} alt="tokenomits" />TRAISHUNT</span>
-        <div className={styles.tokencardscontainer}>
-  <div className={styles.tokencard}>
-    <div className={styles.icon}>
-      <img src={mati} alt="TSH Logo" />
-    </div>
-    <div className={styles.content}>
-      <h3>TRAISHUNT</h3>
-      <p>Token</p>
-    </div>
-  </div>
+        <div className={styles.container3_1}>
+          <span><img src={tokennomits} alt="tokenomits" />TRAISHUNT</span>
+          <div className={styles.tokencardscontainer}>
+            <div className={styles.tokencard}>
+              <div className={styles.icon}>
+                <img src={mati} alt="TSH Logo" />
+              </div>
+              <div className={styles.content}>
+                <h3>TRAISHUNT</h3>
+                <p>Token</p>
+              </div>
+            </div>
 
-  <div className={styles.tokencard}>
-    <div className={styles.icon}>
-      <img src={traisblack} alt="Traishunt Logo" />
-    </div><br />
-    <div className={styles.content}>
-      <h3>Traishunt</h3>
-      <p>21.000.000<br />Tokens</p>
-    </div>
-  </div>
+            <div className={styles.tokencard}>
+              <div className={styles.icon}>
+                <img src={traisblack} alt="Traishunt Logo" />
+              </div><br />
+              <div className={styles.content}>
+                <h3>Traishunt</h3>
+                <p>21.000.000<br />Tokens</p>
+              </div>
+            </div>
 
-  <div className={styles.tokencard}>
-    <div className={styles.icon}>
-      <img src={mati3} alt="Polygon Logo" />
-    </div>
-    <div className={styles.content}>
-      <h3><strong>RED POL</strong></h3>
-      <p>(Polygon pos chain)</p>
-    </div>
-  </div>
- 
-</div>
-<MyAccordion />
+            <div className={styles.tokencard}>
+              <div className={styles.icon}>
+                <img src={mati3} alt="Polygon Logo" />
+              </div>
+              <div className={styles.content}>
+                <h3><strong>RED POL</strong></h3>
+                <p>(Polygon pos chain)</p>
+              </div>
+            </div>
+
+          </div>
+          <div ref={accordionRef} className={styles.accordion}>
+            <div className={styles.accordionitem}>
+              <div className={styles.accordionheader}>
+                <span className={styles.percentage}>5% Pre-venta:</span>
+                <span className={styles.tokens}>1.050.000 tokens</span>
+              </div>
+              <div className={styles.accordioncontent}>
+                <strong>Objetivo:</strong>
+                <p>Recaudar fondos iniciales para el desarrollo del proyecto.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <div className={styles.container3_2}>
+          <div className={styles.vectorfull}>
+            <h1>Distribución - Gráfico</h1>
+            <img src={diagram} alt="diagram" />
+          </div>
+          <div className={styles.banner}>
+
+            <div className={styles.imageSection}>
+
+              <img src={pareja} alt="Pareja" className={styles.coupleImage} />
+
+            </div>
+
+            <div className={styles.contentSection}>
+
+              <h1>Beneficios Exclusivos para validadores</h1>
+
+              <p className={styles.titlepcontent}><strong>(1,000 USD)</strong> 50 cupos primerizos</p>
+
+              <p className={styles.titlepcontent}>Únete al selecto grupo de Validadores y disfruta de privilegios únicos:</p>
+
+              <div className={styles.benefits}>
+
+                <div className={styles.benefitItem}>
+
+                  <img src={one} alt="Icono 1" />
+
+                  <h3>Compra preferencial</h3>
+
+                  <p className={styles.titlepcontent2}>Accede a la moneda a un precio exclusivo</p>
+
+                </div>
+
+                <div className={styles.benefitItem}>
+
+                  <img src={two} alt="Icono 2" />
+
+                  <h3>Bonificación <br />en moneda</h3>
+
+                  <p className={styles.titlepcontent2}>Recibe 200USD en<br /> monedas*</p>
+
+                </div>
+
+                <div className={styles.benefitItem}>
+
+                  <img src={three} alt="Icono 3" />
+
+                  <h3>Staking <br /> Premium</h3>
+
+                  <p className={styles.titlepcontent2}>20% de las comisiones por transacción*</p>
+
+                </div>
+
+                <div className={styles.benefitItem}>
+
+                  <img src={four} alt="Icono 4" />
+
+                  <h3>Capacitación <br />VIP</h3>
+
+                  <p className={styles.titlepcontent2}>Exclusivos eventos para miembros</p>
+
+                </div>
+
+              </div>
+
+              <button className={styles.ctaButton}>QUIERO SER VALIDADOR</button>
+
+            </div>
+
+          </div>
+
+        </div>
+       
       </div>
+      <div className={styles.container4}>
+        <section className={styles.walletconection}>
+          
+
+        </section>
+        </div>
     </div>
   );
 };
