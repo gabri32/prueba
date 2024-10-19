@@ -269,80 +269,82 @@ const Home: React.FC = () => {
             <h1>Distribución - Gráfico</h1>
             <img src={diagram} alt="diagram" />
           </div>
-          <div className={styles.banner}>
-
-            <div className={styles.imageSection}>
-
-              <img src={pareja} alt="Pareja" className={styles.coupleImage} />
-
-            </div>
-
-            <div className={styles.contentSection}>
-
-              <h1>Beneficios Exclusivos para validadores</h1>
-
-              <p className={styles.titlepcontent}><strong>(1,000 USD)</strong> 50 cupos primerizos</p>
-
-              <p className={styles.titlepcontent}>Únete al selecto grupo de Validadores y disfruta de privilegios únicos:</p>
-
-              <div className={styles.benefits}>
-
-                <div className={styles.benefitItem}>
-
-                  <img src={one} alt="Icono 1" />
-
-                  <h3>Compra preferencial</h3>
-
-                  <p className={styles.titlepcontent2}>Accede a la moneda a un precio exclusivo</p>
-
-                </div>
-
-                <div className={styles.benefitItem}>
-
-                  <img src={two} alt="Icono 2" />
-
-                  <h3>Bonificación <br />en moneda</h3>
-
-                  <p className={styles.titlepcontent2}>Recibe 200USD en<br /> monedas*</p>
-
-                </div>
-
-                <div className={styles.benefitItem}>
-
-                  <img src={three} alt="Icono 3" />
-
-                  <h3>Staking <br /> Premium</h3>
-
-                  <p className={styles.titlepcontent2}>20% de las comisiones por transacción*</p>
-
-                </div>
-
-                <div className={styles.benefitItem}>
-
-                  <img src={four} alt="Icono 4" />
-
-                  <h3>Capacitación <br />VIP</h3>
-
-                  <p className={styles.titlepcontent2}>Exclusivos eventos para miembros</p>
-
-                </div>
-
-              </div>
-
-              <button className={styles.ctaButton}>QUIERO SER VALIDADOR</button>
-
-            </div>
-
-          </div>
+          
 
         </div>
        
       </div>
       <div className={styles.container4}>
-        <section className={styles.walletconection}>
-          
+      <div className={styles.banner}>
 
-        </section>
+<div className={styles.imageSection}>
+
+  <img src={pareja} alt="Pareja" className={styles.coupleImage} />
+
+</div>
+
+<div className={styles.contentSection}>
+
+  <h1>Beneficios Exclusivos para validadores</h1>
+
+  <p className={styles.titlepcontent}><strong>(1,000 USD)</strong> 50 cupos primerizos</p>
+
+  <p className={styles.titlepcontent}>Únete al selecto grupo de Validadores y disfruta de privilegios únicos:</p>
+
+  <div className={styles.benefits}>
+
+    <div className={styles.benefitItem}>
+
+      <img src={one} alt="Icono 1" />
+
+      <h3>Compra preferencial</h3>
+
+      <p className={styles.titlepcontent2}>Accede a la moneda a un precio exclusivo</p>
+
+    </div>
+
+    <div className={styles.benefitItem}>
+
+      <img src={two} alt="Icono 2" />
+
+      <h3>Bonificación <br />en moneda</h3>
+
+      <p className={styles.titlepcontent2}>Recibe 200USD en<br /> monedas*</p>
+
+    </div>
+
+    <div className={styles.benefitItem}>
+
+      <img src={three} alt="Icono 3" />
+
+      <h3>Staking <br /> Premium</h3>
+
+      <p className={styles.titlepcontent2}>20% de las comisiones por transacción*</p>
+
+    </div>
+
+    <div className={styles.benefitItem}>
+
+      <img src={four} alt="Icono 4" />
+
+      <h3>Capacitación <br />VIP</h3>
+
+      <p className={styles.titlepcontent2}>Exclusivos eventos para miembros</p>
+
+    </div>
+
+  </div>
+
+  <button className={styles.ctaButton}>QUIERO SER VALIDADOR</button>
+
+</div>
+
+</div>
+<br />
+<div  className={styles.walletconection}>
+<div className={styles.conection}></div>
+</div>
+     
         </div>
     </div>
   );

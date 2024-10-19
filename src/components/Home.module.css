@@ -18,7 +18,7 @@
 
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
- 
+
 }
 
 .container2{
@@ -366,7 +366,7 @@ a:hover {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-  height: 1750px; /* Asegúrate de tener una altura definida */
+  height: 200vh; /* Asegúrate de tener una altura definida */
   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
   align-items: center;       /* Alinea los elementos horizontalmente al centro */
   text-align: center;   
@@ -522,7 +522,7 @@ width: 50%;
 
 /*Banner*/
 .banner {
-  top: 50%;
+  top:-11%;
   display: flex;
   background-color: #0f1e36;
   border-radius: 15px;
@@ -530,8 +530,8 @@ width: 50%;
   width: 80%;
   max-width: 1200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-left: 10vw;
-  height: 59%;
+left: 35vh;
+  height: 23.7%;
   position: relative;
 }
 
@@ -626,13 +626,28 @@ width: 200px;
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
   height: 1750px; /* Asegúrate de tener una altura definida */
-  display: flex; /* Asegúrate de que el contenedor use flexbox */
+  display:block; /* Asegúrate de que el contenedor use flexbox */
   justify-content: center; /* Centra verticalmente el contenido dentro del contenedor */
   align-items: center; /* Alinea los elementos horizontalmente al centro */
   text-align: center;   
 }
 .walletconection{
-  justify-content: center; /* Centra verticalmente el contenido dentro del contenedor */
-  align-items: center; /* Alinea los elementos horizontalmente al centro */
-  text-align: center;  
+ width: 50%;
+ height: 60%;
+ position: relative;
+ left: 50vh;
+ background-color: #ffffff00;
+align-items: center;
+text-align: center;  
+justify-content: center; 
+}
+.conection{
+width: 70%;
+height: 70%;
+border-radius: 10px;
+background-color: #060C18;
+border: 2px solid #04F1A9;
+left: 15vh;
+position: relative;
+box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
