@@ -267,6 +267,7 @@ margin-top: auto;
   margin-bottom: -5%;
   position:relative; z-index:3;
    opacity:1}
+
 .cuerpo img{
   margin-left: 10%;
   width: 50%;
@@ -329,7 +330,7 @@ button.p-button {
 }
 .countdown span {
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 900%;
   font-weight: 0%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
@@ -410,7 +411,7 @@ a:hover {
 
 .tokencard {
   background-color: #00d2c4;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   width: 32%;
   padding: 20px;
@@ -447,7 +448,7 @@ a:hover {
 /* Elemento del acordeón */
 .accordionitem {
   background-color: #0a0c23;
-  border: 2px solid #00e5b4;
+  border: 1px solid #00e5b4;
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 10px;
@@ -636,47 +637,103 @@ width: 200px;
 }
 
 .walletconection{
- width: 45%;
+ width: 55%;
  height: 25%;
  position: relative;
- left: 28%;  
+ left: 25%;  
  background-color: #ffffff00;
 align-items: center;
 text-align: center;  
 justify-content: center; 
 top:-10%;
 }
-.conection{
-width: 75%;
-height: 70%;
-border-radius: 10px;
-background-color: #060C18;
-border: 2px solid #04F1A9;
-left: 12vh;
-top: -15vh;
-position: relative;
-text-align: center;
+.conection {
+  width: 75%;
+  height: 70%;
+  border-radius: 10px;
+  border: 1px solid #04F1A9;
+  background-color: #060c1862; /* Fallback por si el gradiente no se soporta */
+  position: relative;
+  left: 12vh;
+  top: -15vh;
+  text-align: center;
+
+}
+.contenedorcontador2 {
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 0%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 10%;
+  font-family: 'fat';
+  background-color: #060C18;
+  margin-bottom: auto;
+  margin-top: 20px;
+   opacity:1}
+   .conection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      170deg,
+      rgba(87, 47, 168, 1) 0%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    border-radius: inherit; /* Respeta el borde redondeado del contenedor padre */
+    pointer-events: none; /* No interferirá con los eventos del contenido */
+    z-index: -1; /* Asegura que el pseudo-elemento quede detrás del contenido */
+  }
+  
+.conection::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    350deg,
+    rgba(87, 47, 168, 1)0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  border-radius: inherit; /* Respeta el borde redondeado del .fase */
+  pointer-events: none; /* El pseudo-elemento no interferirá con el contenido de .fase */
+  z-index: -1; 
 }
 .conection img{
-margin-bottom: -50%;
+margin-bottom: -30%;
  position: relative;
-box-shadow: 0 1px 10px rgb(255, 1, 1);
-width: 100vh;
+width: 150%;
 }
 .preventa{
   position: relative;
-  top: 50%;
-  width: 100%;
+ 
 
 }
 .walletconection img{
   position: relative;
 top: -20vh;
-width: 40%;
+width: 80%;
 line-height: 0%;
 text-align: center;
 }
+.conection h2{
+  position: relative;
+top: 2%;
+color: #00e57a;
 
+
+}
+.f1{
+  width: 80%;
+  position: relative;
+  left: 10%;
+margin-bottom: -4%;
+  text-align: start;
+}
 .walletconection h4{
   position: relative;
 top: -20vh;
@@ -696,9 +753,99 @@ text-align: center;
 
 
 }
+.buyToken {
+  border: 1px solid #00d089;
+  width: 80%;
+  font-size: 20px;
+  text-align: start;
+  background-color: #060C18;
+  color: #00d089;
+  border-radius: 10px;
+  height: 10%;
+  display: flex; /* Flexbox para alinear el contenido */
+  align-items: start; /* Alinea verticalmente */
+  justify-content: start; /* Alinea horizontalmente */
+  padding: 10px; /* Asegúrate de usar padding adecuado */
+  left: 10%;
+  top:2%;
+position: relative;
+}
+.walletconection .countdown p{
+  color: #0bffae;
+}
+.inputGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 80%;
+  margin-bottom: 15px;
+  position: relative;
+  top: 4%;
+  left: 10%;
+}
+
+.inputWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+ 
+}
+
+.inputWrapper label {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.inputWrapper input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #00d089;
+  border-radius: 8px;
+  background-color: transparent; /* Fondo transparente */
+  color: white;
+  outline: none;
+  background-color: white;
+}
+
+.inputWrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.connectButton {
+  width: 80%;
+ 
+  border: 0.5px solid #00d089;
+  border-radius: 8px;
+  background-color: #00d089;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  top: 2%;
+  left: -4%;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.connectButton:hover {
+  background-color: #00e57a;
+}
+
+.commission {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #ffffff;
+}
+.conection p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #ffffff;
+}
 .fase {
   background-color: #0b2342;
-  border: 2px solid #00d089;
+  border: 1px solid #00d089;
   border-radius: 8px;
   padding: 20px;
   width: 80%;
@@ -721,8 +868,8 @@ text-align: center;
   height: 100%;
   background: linear-gradient(
     170deg,
-    rgba(255, 255, 255, 0.275) 0%,
-    rgba(255, 255, 255, 0) 40%
+    rgba(87, 47, 168, 1)0%,
+    rgba(255, 255, 255, 0) 30%
   );
   border-radius: inherit; /* Respeta el borde redondeado del .fase */
   pointer-events: none; /* El pseudo-elemento no interferirá con el contenido de .fase */
@@ -736,8 +883,8 @@ text-align: center;
   height: 100%;
   background: linear-gradient(
     350deg,
-    rgba(255, 255, 255, 0.212) 0%,
-    rgba(255, 255, 255, 0) 40%
+    rgba(87, 47, 168, 1)0%,
+    rgba(255, 255, 255, 0) 30%
   );
   border-radius: inherit; /* Respeta el borde redondeado del .fase */
   pointer-events: none; /* El pseudo-elemento no interferirá con el contenido de .fase */

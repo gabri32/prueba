@@ -33,10 +33,6 @@ import why  from './why.png'
 import niebla from './niebla 1.png'
 import grande from './Rectangle 41.png'
 import pequeña from './Rectangle 43.png'
-
-
-
-
 import estructura from './Estructura Técnica y Modelo económico.png'
 import referido from "./referido 2.png";
 import { Menubar } from 'primereact/menubar';
@@ -367,7 +363,34 @@ const Home: React.FC = () => {
           <img src={letterTrainsImage} alt="Traishunt Logo" />
           <h4>PREVENTA</h4>
           <div className={styles.conection}>
-            <img src={prevent} alt="Traishunt prevent" className={styles.preventa} />
+            <div className={styles.f1}>   <h2>FASE 1</h2></div>
+      
+          <img src={prevent} alt="Traishunt prevent" className={styles.preventa} />
+<br /><br />
+            <div className={styles.contenedorcontador2}>
+          <Countdown date={countdownDate} renderer={countdownRenderer} />
+        
+        </div>
+        <div>
+          <br />
+          <span>1 $THT = $0.12 USD</span>
+         </div>
+         <div className={styles.buyToken}>
+          <span>TUS $THS COMPRADO:</span>
+         </div>
+         <div className={styles.inputGroup}>
+        <div className={styles.inputWrapper}>
+          <label>Compra con USDT</label>
+          <input type="text" placeholder="Ingresa monto" />
+        </div>
+        <div className={styles.inputWrapper}>
+          <label>Recibes $THT</label>
+          <input type="text" placeholder="Monto recibido" />
+        </div>
+      </div>
+
+      <button className={styles.connectButton}>CONECTAR WALLET</button>
+      <p className={styles.commission}>Comisión a wallet 10%</p>
           </div>
           <div className={styles.fases}>
             <div className={styles.fase}>
