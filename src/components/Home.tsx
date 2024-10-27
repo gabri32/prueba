@@ -253,7 +253,7 @@ const Home: React.FC = () => {
               </div><br />
               <div className={styles.content}>
                 <h3>Traishunt</h3>
-                <p>21.000.000<br />Tokens</p>
+                <p>21.000.000 </p><p>Tokens</p>
               </div>
             </div>
 
@@ -370,6 +370,13 @@ const Home: React.FC = () => {
             <div className={styles.contenedorcontador2}>
           <Countdown date={countdownDate} renderer={countdownRenderer} />
         
+        </div>
+        <br />
+        <div >
+        $130.000 / $150.000
+        <div className={styles.progresscontainer}>
+        <div className={styles.progressbar} id="progress-bar"></div>
+    </div>
         </div>
         <div>
           <br />

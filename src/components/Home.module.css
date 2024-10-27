@@ -411,26 +411,27 @@ a:hover {
 
 .tokencard {
   background-color: #00d2c4;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   width: 32%;
+  height: 35%;
   padding: 20px;
- 
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .icon img {
-
+width: 80%;
   margin-bottom: 15px;
-  padding: 0 6vh;  
-}
+   margin: 5px 10%; /* Ajusta el margen superior e inferior a 5px */
+  padding: 0; /* Elimina cualquier padding adicional */}
 
 .content h3 {
   font-size: 18px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 5px;
+    margin: 5px 0; /* Ajusta el margen superior e inferior a 5px */
+  padding: 0; /* Elimina cualquier padding adicional */
 }
 
 .content p {
@@ -638,7 +639,7 @@ width: 200px;
 
 .walletconection{
  width: 55%;
- height: 25%;
+ height: 30%;
  position: relative;
  left: 25%;  
  background-color: #ffffff00;
@@ -712,6 +713,25 @@ width: 150%;
   position: relative;
  
 
+}
+.progresscontainer {
+  width: 80%;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  position: relative;
+  left: 10%;
+  top: 6%;
+}
+
+.progressbar {
+
+  height: 30px;
+  width: 70%; /* Comienza con 0% de ancho */
+  background-color: #04F1A9; /* Color verde */
+  transition: width 0.5s ease; /* Transición suave al cambiar el ancho */
 }
 .walletconection img{
   position: relative;
@@ -824,7 +844,7 @@ position: relative;
   font-weight: bold;
   cursor: pointer;
   top: 2%;
-  left: -4%;
+  left: -5%;
   position: relative;
   transition: background-color 0.3s;
 }
