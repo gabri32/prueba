@@ -31,6 +31,9 @@ import second from './2.1.png'
 import third from './3.1.png'
 import why  from './why.png'
 import niebla from './niebla 1.png'
+import w from './whatsapicon.png'
+import f from './facebookicion.png'
+import i from './instaicon.png'
 import grande from './Rectangle 41.png'
 import pequeña from './Rectangle 43.png'
 import estructura from './Estructura Técnica y Modelo económico.png'
@@ -46,26 +49,7 @@ const Home: React.FC = () => {
   ];
   const accordionRef = useRef<HTMLDivElement>(null);
   const startDate = new Date('2024-10-04').getTime();
-  useEffect(() => {
-    const headers = accordionRef.current?.querySelectorAll('.accordion-header');
 
-    headers?.forEach(header => {
-      header.addEventListener('click', () => {
-        const item = header.parentElement;
-        item?.classList.toggle('open'); // Añade o quita la clase 'open'
-      });
-    });
-
-    // Limpieza del efecto: Remover los listeners al desmontar el componente
-    return () => {
-      headers?.forEach(header => {
-        header.removeEventListener('click', () => {
-          const item = header.parentElement;
-          item?.classList.toggle('open');
-        });
-      });
-    };
-  }, []);
   // Fecha límite: 30 días después del 4 de octubre 2024
   const countdownDate = startDate + 30 * 24 * 60 * 60 * 1000;
 
@@ -91,7 +75,41 @@ const Home: React.FC = () => {
       </div>
     );
   };
-
+  const Footer = () => {
+    return (
+      <footer className={styles.footer}>
+        <div className={styles.footerContainer}>
+          <div className={styles.footerSection}>
+          <a href="#"><img src={traisblack} alt="trrais" /></a>
+          </div>
+          <div className={styles.footerSection}>
+            <h3>Empresa</h3>
+            <ul>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Inversionistas</a></li>
+              <li><a href="#">Whitepaper</a></li>
+            </ul>
+          </div>
+          <div className={styles.footerSection}>
+            <h3>Contactos</h3>
+            <p>+57 3113637361</p>
+            <p>+57 3113637361</p>
+            <p>
+              <a href="mailto:preventatrialshunt@gmail.com">
+                preventatrialshunt@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className={styles.socialIcons}>
+            <a href="#"><img src={w} alt="WhatsApp" /></a>
+            <a href="#"><img src={f} alt="Instagram" /></a>
+            <a href="#"><img src={i} alt="Facebook" /></a>
+          </div>
+        </div>
+      </footer>
+    );
+  };
   return (
     <div className={styles.container}>
       {/* Menú de Navegación */}
@@ -363,16 +381,17 @@ const Home: React.FC = () => {
           <img src={letterTrainsImage} alt="Traishunt Logo" />
           <h4>PREVENTA</h4>
           <div className={styles.conection}>
-            <div className={styles.f1}>   <h2>FASE 1</h2></div>
+            <div className={styles.f1}>   
+              <h2>FASE 1</h2>
+              <img src={prevent} alt="Traishunt prevent" className={styles.preventa} /></div>
       
-          <img src={prevent} alt="Traishunt prevent" className={styles.preventa} />
-<br /><br />
+        
+
             <div className={styles.contenedorcontador2}>
           <Countdown date={countdownDate} renderer={countdownRenderer} />
         
-        </div>
-        <br />
-        <div >
+        </div><br />
+        <div className={styles.prices}>
         $130.000 / $150.000
         <div className={styles.progresscontainer}>
         <div className={styles.progressbar} id="progress-bar"></div>
@@ -395,7 +414,7 @@ const Home: React.FC = () => {
           <input type="text" placeholder="Monto recibido" />
         </div>
       </div>
-
+<br />
       <button className={styles.connectButton}>CONECTAR WALLET</button>
       <p className={styles.commission}>Comisión a wallet 10%</p>
           </div>
@@ -663,7 +682,11 @@ const Home: React.FC = () => {
       </section>
     </div>
       </div>
+      <div >
+      <Footer  />
     </div>
+    </div>
+    
   );
 };
 
