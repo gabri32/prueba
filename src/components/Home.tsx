@@ -57,20 +57,20 @@ const Home: React.FC = () => {
     return (
       <div className={styles.countdown}>
         <div>
-          <span>{days}.</span>
-          <p>días</p>
+          <span><i>{days}.</i></span>
+          <p><i> días </i></p>
         </div>
         <div>
-          <span>{hours}.</span>
-          <p>horas</p>
+          <span><i>{hours}.</i></span>
+          <p><i>horas</i></p>
         </div>
         <div>
-          <span>{minutes}.</span>
-          <p>minutos</p>
+          <span><i>{minutes}.</i></span>
+          <p><i>minutos</i></p>
         </div>
         <div>
-          <span>{seconds}.</span>
-          <p>segundos</p>
+          <span><i>{seconds}.</i></span>
+          <p><i>segundos</i></p>
         </div>
       </div>
     );
@@ -253,7 +253,7 @@ const Home: React.FC = () => {
       <div className={styles.container3}>
         <div className={styles.container3_1}>
           <br />
-          <span><img src={tokennomits} alt="tokenomits" />TRAISHUNT</span>
+          <span className={styles.imagentituo}><img src={tokennomits} alt="tokenomits" /><div>TRAISHUNT</div></span>
           <div className={styles.tokencardscontainer}>
             <div className={styles.tokencard}>
               <div className={styles.icon}>
@@ -287,16 +287,34 @@ const Home: React.FC = () => {
 
           </div>
           <div ref={accordionRef} className={styles.accordion}>
-            <div className={styles.accordionitem}>
-              <div className={styles.accordionheader}>
-                <span className={styles.percentage}>5% Pre-venta:</span>
-                <span className={styles.tokens}>1.050.000 tokens</span>
-              </div>
-              <div className={styles.accordioncontent}>
-                <strong>Objetivo:</strong>
-                <p>Recaudar fondos iniciales para el desarrollo del proyecto.</p>
-              </div>
-            </div>
+          <section className={styles.faq2}>
+        <h2>Preguntas frecuentes</h2>
+        <details>
+          <summary>5% Pre-venta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div className={styles.cantidad}><span>1.050.000 tokens</span></div> </summary>
+          <p>Descripción sobre Traishunt...</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Información sobre el suministro...</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Información sobre el suministro...</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Información sobre el suministro...</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Información sobre el suministro...</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Información sobre el suministro...</p>
+        </details>
+        {/* Agrega más FAQs según sea necesario */}
+      </section>
           </div>
 
         </div>
@@ -379,7 +397,8 @@ const Home: React.FC = () => {
 
         <div className={styles.walletconection}>
           <img src={letterTrainsImage} alt="Traishunt Logo" />
-          <h4>PREVENTA</h4>
+          
+         <div><h4>PREVENTA</h4></div> 
           <div className={styles.conection}>
             <div className={styles.f1}>   
               <h2>FASE 1</h2>
@@ -526,11 +545,14 @@ const Home: React.FC = () => {
                 <h4>1% <br />
                   <span>Nivel 3</span></h4>
                 <p>Finalmente, ganarás un 1% de comisión sobre las compras de los referidos en tercer nivel.</p>
+              
               </div>
+              
             </div>
+          <div className={styles.corto}><img src={referido} alt="Icono 4" /></div>  
           </div>
           <button className={styles.button}>QUIERO ESTOS BENEFICIOS   </button>
-          <img src={referido} alt="Icono 4" />
+          
         </div>
       </div>
       <div className={styles.container6}>
