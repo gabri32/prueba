@@ -507,7 +507,7 @@ width: 80%;
 }
 
 .accordioncontent p {
-  margin: 0;
+  margin: 0px;
   color: #a6b0d3;
 }
 
@@ -548,9 +548,8 @@ width: 80%;
     display: grid;
     justify-content: space-between;
     gap: 10px; /* Espaciado entre tarjetas */
-    padding: 80px;
+  
     position: relative;
-    left:12%;
    
   }
   .tokencard {
@@ -572,8 +571,8 @@ width: 80%;
 .container3_2{
   position:relative;
   width: 100%;
- height: 100%;
-   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+padding-bottom: 100vh;
+  justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
   align-items: center;       /* Alinea los elementos horizontalmente al centro */
   text-align: center;    
 }

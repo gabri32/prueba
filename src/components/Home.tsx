@@ -134,7 +134,6 @@ const Home: React.FC = () => {
       </div>
       
       <div className={styles.container2}>
-        <img src={barpoints} alt="Imagen sobrepuesta" className={styles.overlayimage} />
         <div className={styles.bloquemap}>
 
           <img src={titletrais} alt="Traishunt Logo" />
@@ -321,8 +320,8 @@ const Home: React.FC = () => {
         </details>
       </section>
           </div>
-
         </div>
+        <br />
         <div className={styles.container3_2}>
           <div className={styles.vectorfull}>
             <h1>Distribución - Gráfico</h1>
