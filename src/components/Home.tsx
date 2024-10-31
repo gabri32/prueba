@@ -132,12 +132,13 @@ const Home: React.FC = () => {
           <Countdown date={countdownDate} renderer={countdownRenderer} />
         </div>
       </div>
+      
       <div className={styles.container2}>
         <img src={barpoints} alt="Imagen sobrepuesta" className={styles.overlayimage} />
         <div className={styles.bloquemap}>
 
           <img src={titletrais} alt="Traishunt Logo" />
-          <p><span>Traishunt</span> Traishunt es más que una criptomoneda; es la práctica de descubrir las oportunidades ocultas que el mercado ofrece,un ecosistema Defi, guiándote hacia un crecimiento financiero que antes parecía inalcanzable. Pero esto no se limita a las finanzas: es también una metáfora de la vida. Es el arte de perseguir tus sueños y metas con una perseverancia inquebrantable, siguiendo los rastros que te conducirán al éxito. Únete a nosotros en esta búsqueda incansable. Aquí, cada pista, cada rastro que sigues, te acerca un paso más a hacer realidad tus ambiciones. ¡Bienvenido al lugar donde la determinación se encuentra con la oportunidad</p>
+          <p><span>Traishunt</span> es más que una criptomoneda; es la práctica de descubrir las oportunidades ocultas que el mercado ofrece,un ecosistema Defi, guiándote hacia un crecimiento financiero que antes parecía inalcanzable. Pero esto no se limita a las finanzas: es también una metáfora de la vida. Es el arte de perseguir tus sueños y metas con una perseverancia inquebrantable, siguiendo los rastros que te conducirán al éxito. Únete a nosotros en esta búsqueda incansable. Aquí, cada pista, cada rastro que sigues, te acerca un paso más a hacer realidad tus ambiciones. ¡Bienvenido al lugar donde la determinación se encuentra con la oportunidad</p>
         </div>
         <div>
           <div className={styles.slidercontainer}>
@@ -253,7 +254,12 @@ const Home: React.FC = () => {
       <div className={styles.container3}>
         <div className={styles.container3_1}>
           <br />
-          <span className={styles.imagentituo}><img src={tokennomits} alt="tokenomits" /><div>TRAISHUNT</div></span>
+          <div className={styles.titulos}>
+          <span className={styles.imagentituo}>
+            <img src={tokennomits} alt="tokenomits" /><div>TRAISHUNT</div>
+            </span>
+          </div>
+         
           <div className={styles.tokencardscontainer}>
             <div className={styles.tokencard}>
               <div className={styles.icon}>
@@ -467,44 +473,29 @@ const Home: React.FC = () => {
               <div className={styles.slider}>
                 <div className={styles.card2}>
                   <h5>Total de monedas:</h5>
-
-
                   <p>Se emitirán 21.000.0000 de monedas. Esta cifra es fija, lo que significa que no habrá emisión adicional después de alcanzar este límite.</p>
-
                 </div>
-
                 <div className={styles.card2}>
                   <h5>Distribución por metas y Ciclos</h5>
                   <p>La distribución se realizará en varios ciclos, comenzando con el primer ciclo de 500,000 dólares en liquidez.
                   </p>
 
                 </div>
-
-
-
-
                 <div className={styles.card2}>
                   <h5>Ciclos:</h5>
                   <p>
                     En cada ciclo, las metas de recaudación de liquidez se irán incrementando, comenzando con 100,000 USD en la primer meta y llegando a 500,000 USD en el último en la última meta y culminación de ciclo
-
-
-
-                  </p>
+                </p>
                 </div>
-
-
                 <div className={styles.card2}>
                   <h5>Mecanismo de Liberación y Ventas:</h5>
                   <p>
-
                     Una vez alcanzada la meta de 100,000 USD, se habilitarán las ventas durante un período de tiempo predefinido.
                     <br /><br />
                     Durante este período, los propietarios de wallets podrán vender hasta 1/5 (20%) de sus monedas adquiridas, lo que se gestionará automáticamente a través de un contrato inteligente que limitará la cantidad de monedas que pueden ser vendida.</p></div>
                 <div className={styles.card2}>
                   <h5>Progresión de Metas</h5>
                   <p>
-
                     Después del cierre del período de ventas, se habilitan nuevamente las compras hasta alcanzar la siguiente meta de 200,000 USD en liquidez, siguiendo la misma mecánica hasta completar el ciclo.
                     <br /><br />
                     Al completar el primer ciclo, se desbloquea el 100% de las monedas restantes en las wallets, permitiendo a los usuarios vender o retener sus monedas según su preferencia.

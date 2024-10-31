@@ -49,7 +49,10 @@
 .bloquemap {
   position: relative;
   width: 78%;
-  height: 500px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  height: auto;
   margin-left: 11%; /* Centra horizontalmente el contenedor */
   background: linear-gradient(to bottom, #0B336FE5 0%, #040F21E5 110%);
   border-radius: 10px;
@@ -58,23 +61,22 @@
   flex-direction: column;    /* Coloca los elementos en columna (imagen arriba, texto abajo) */
   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
   align-items: center;       /* Alinea los elementos horizontalmente al centro */
-  text-align: center;        /* Asegura que el texto esté centrado dentro del párrafo */
+  text-align: center; 
+  text-align: justify;       /* Asegura que el texto esté centrado dentro del párrafo */
 }
 
 .bloquemap img {
+  position: relative;
   width: 60%;
-  margin-bottom: 20px; /* Espacio abajo */
 }
 
 
 .bloquemap p {
-  margin-top: 15px;       /* Espacio entre la imagen y el texto */
   margin-left: 8%;        /* Espacio a la izquierda */
   margin-right: 8%;       /* Espacio a la derecha */
   padding: 0 20px;         /* Evita que el texto toque los bordes */
   display: block;          
   color: #f8f8f8;          
-  font-size: 140%;         /* Aumenta el tamaño del texto */
 }
 .bloquemap span {
           
@@ -251,10 +253,11 @@ margin-top: auto;
   padding: 20px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
+
 .contenedordetexto{
   margin-left:10%;
   text-align: start;
-  line-height: 90%;
+  line-height: 0.8;
 }
 .contenedorcontador {
   border-radius: 10px;
@@ -272,6 +275,7 @@ margin-top: auto;
   margin-left: 10%;
   width: 50%;
 }
+
 .cuerpo p{
   text-align: start;
   width: 30%;
@@ -279,19 +283,41 @@ margin-top: auto;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 1.7vw;
   color: #f8f8f8;
   margin-bottom: 20px;
   font-family: 'fat';
 }
 
 p {
-  font-size: 22px;
+  font-size: 2vw;
   margin-top: 10px;
   color: #07EFBD;
   text-align: center;
+  width: 100%;
 }
-
+@media (max-width: 768px) {
+  .cuerpo p{
+    text-align: start;
+    width: 30%;
+    margin-left: 10%;
+  }
+  
+  h1 {
+    font-size: 4vw;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+    font-family: 'fat';
+  }
+  
+  p {
+    font-size: 3.5vw;
+    margin-top: 10px;
+    color: #07EFBD;
+    text-align: center;
+    width: 100%;
+  }
+}
 img {
   max-width: 100%;
   height: auto;
@@ -401,14 +427,21 @@ a:hover {
 }
 .imagentituo{
   position: relative;
-      left: 38%;
+padding: 0%;
+margin: 0;
+    
      
+}
+.titulos{
+  width: 50%;
+  position: relative;
+  left: 36%;
 }
 .container3_1 span div{
   text-align: justify;
   font-size: 30px;
   margin-top: 0px;
-  margin-left: 4%;
+  margin-left: 6%;
 
 }
 .tokencardscontainer {
@@ -514,7 +547,7 @@ width: 70%;
 
 /*Banner*/
 .banner {
-  top:-19%;
+  top:-12%;
   display: flex;
   background-color: #0f1e36;
   border-radius: 15px;
@@ -523,53 +556,52 @@ width: 70%;
   max-width: 1200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  left: 10%;
-  height: 14.8%;
+  height: 15.8%;
   position: relative;
 }
 
 .banner .imageSection {
   flex: 1;
-width: 200px;
-
-
+width: 30%;
 }
 
 .banner .coupleImage {
-  left: -100px;
-  width: 500px;
-  position: relative;
-  
+  position: absolute; /* Cambiamos a absoluto para fijarlo al final */
+  left:-2%;
+  width: 35%;
+  bottom: 0; /* Asegura que esté alineado al fondo del contenedor */
 }
 
 .banner .contentSection {
   flex: 2;
   padding-left: 30px;
+  max-width: 70%;
 }
 
 .banner h1 {
-  font-size: 32px;
+  font-size: 3vw;
   color: #22ffb3;
   margin-bottom: 10px;
-  line-height: 30%;
+  line-height: 80%;
   text-align: end;
 }
 
 .titlepcontent  {
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 2vh;
   line-height: 90%;
   color: #ffffff;
   text-align: end;
 }
 .titlepcontent2{
   color: #00af89;
-  font-size: 17px;
+  font-size: 2vh;
   line-height: 90%;
 }
 .banner .benefits {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 2%;
 }
 
 .banner .benefitItem {
@@ -579,27 +611,29 @@ width: 200px;
 }
 
 .banner .benefitItem img {
-  width: 60px;
+  width: 45%;
   margin-bottom: 10px;
 }
 
 .banner .benefitItem h3 {
-  font-size: 18px;
+  font-size: 1vw;
   margin-bottom: 5px;
 }
 
 .banner .ctaButton {
-  margin-top: 1%;
+  margin-top: 5%;
   padding: 5px 30px;
   background-color: #22ffb3;
   color: #0d2747;
   border: none;
   border-radius: 30px;
-  font-size: 18px;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s;
-  position: relative;
-  left: 20%;
+  position: absolute;
+  left: 45%;
+  bottom: 5%; /* Asegura que esté alineado al fondo del contenedor */
+
 }
 
 .banner .ctabutton:hover {
@@ -618,7 +652,7 @@ width: 200px;
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
   
-  height: 400vh; /* Asegúrate de tener una altura definida */
+  height: 350vh; /* Asegúrate de tener una altura definida */
   
   display: flex; /* Habilita flexbox */
   flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
@@ -628,14 +662,14 @@ width: 200px;
 
 .walletconection{
  width: 55%;
- height: 30%;
+ height: 35%;
  position: relative;
  left: 25%;  
  background-color: #ffffff00;
 align-items: center;
 text-align: center;  
 justify-content: center; 
-top:-10%;
+top:-3%;
 }
 .conection {
   width: 75%;
@@ -936,15 +970,17 @@ color: white;
 }
 .contedorcohote{
   width: 100%;
-  height: 120vh;
+  height: auto;
   position: relative;
   top:12%;
 }
 .backfly {
   background-image: url('./Vectortriangulo.png');
   width: 100%;
-  height: 100%; /* Ajusta la altura */
   z-index: 3;
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita repetición */
+  background-size: cover; 
   top: 0; /* Asegúrate de que se posicione correctamente */
   left: 0;
 }
@@ -967,17 +1003,16 @@ color: white;
   height: 50%;
   left: 10%;
   position: absolute;
-top: 45%;
+top: 18%;
 }
 .card2{
   min-width: 371px;
-  height: 391px;
+  height: 350px;
   background-color: rgba(16, 26, 62, 0.881); /* Color de fondo con transparencia */
   backdrop-filter: blur(10px); /* Aplica el desenfoque */
   -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
   border-radius: 15px; 
   color: white;
-            /* Activa Flexbox */
   flex-direction: column;    /* Coloca los elementos en columna (imagen arriba, texto abajo) */
   justify-content: start;  
   box-shadow: 0 1px 10px rgba(36, 198, 213, 0.562);
