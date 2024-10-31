@@ -331,31 +331,18 @@ const Home: React.FC = () => {
       </div>
       <div className={styles.container4}>
         <div className={styles.banner}>
-
           <div className={styles.imageSection}>
-
             <img src={pareja} alt="Pareja" className={styles.coupleImage} />
-
           </div>
-
           <div className={styles.contentSection}>
-
             <h1>Beneficios Exclusivos para validadores</h1>
-
             <p className={styles.titlepcontent}><strong>(1,000 USD)</strong> 50 cupos primerizos</p>
-
             <p className={styles.titlepcontent}>Únete al selecto grupo de Validadores y disfruta de privilegios únicos:</p>
-
             <div className={styles.benefits}>
-
               <div className={styles.benefitItem}>
-
                 <img src={one} alt="Icono 1" />
-
                 <h3>Compra preferencial</h3>
-
                 <p className={styles.titlepcontent2}>Accede a la moneda a un precio exclusivo</p>
-
               </div>
 
               <div className={styles.benefitItem}>
