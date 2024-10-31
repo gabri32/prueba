@@ -15,7 +15,7 @@
   background-size: cover; /* Imagen cubre todo el contenedor */
   color: #fff;
 
-
+overflow-x: hidden;
   justify-content: center; /* Centrar horizontalmente */
   align-items: center; /* Centrar verticalmente */
 
@@ -432,6 +432,7 @@ margin: 0;
     
      
 }
+
 .titulos{
   width: 50%;
   position: relative;
@@ -460,7 +461,6 @@ margin: 0;
 
   padding: 25px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .icon img {
@@ -485,12 +485,8 @@ width: 80%;
 /* Contenedor del acordeón */
 .accordion {
   width: 100%;
-  
   margin: 0 auto;
 }
-
-
-
 
 .tokens {
   color: #00e5b4;
@@ -523,9 +519,57 @@ width: 80%;
 .accordionitem.open .toggleicon {
   transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  .container3 {
+    background-image: 
+      linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
+      url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    height: 220vh; /* Asegúrate de tener una altura definida */
+    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;       /* Alinea los elementos horizontalmente al centro */
+    text-align: center;   
+  }
+  .container3_1 {
+    width: 100%;
+    left: -15%;
+    margin-bottom: 0%;
+    background: linear-gradient(to top left,  rgb(87, 47, 168) 5%,#0bebc2);
+    position: relative;
+    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;       /* Alinea los elementos horizontalmente al centro */
+    text-align: center;  
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); 
+      border-radius: 0%;
+  }
+  .tokencardscontainer {
+    display: grid;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre tarjetas */
+    padding: 80px;
+    position: relative;
+    left:12%;
+   
+  }
+  .tokencard {
+    background-color: #00d2c4;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .titulos{
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+}
 /* FIN Contenedor del acordeón */
 .container3_2{
-
   position:relative;
   width: 100%;
  height: 100%;
@@ -542,9 +586,19 @@ width: 70%;
 }
 .vectorfull{
   display: block;
-  margin-top: -2vw;
 }
-
+@media (max-width: 768px) {
+  .container3_2 img{
+    top: 10%;
+    width: 99%;
+       justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+      align-items: center;       /* Alinea los elementos horizontalmente al centro */
+      text-align: center;    
+    }
+    .vectorfull{
+      display: block;
+    }
+}
 /*Banner*/
 .banner {
   top:-12%;

@@ -319,7 +319,6 @@ const Home: React.FC = () => {
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
           <p>Información sobre el suministro...</p>
         </details>
-        {/* Agrega más FAQs según sea necesario */}
       </section>
           </div>
 
@@ -329,10 +328,7 @@ const Home: React.FC = () => {
             <h1>Distribución - Gráfico</h1>
             <img src={diagram} alt="diagram" />
           </div>
-
-
         </div>
-
       </div>
       <div className={styles.container4}>
         <div className={styles.banner}>
