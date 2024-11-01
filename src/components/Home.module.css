@@ -349,6 +349,19 @@ p {
   left: 10%;
   height: 150vh;
   }
+  .contenedorcontador {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 0%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 0%;
+    font-family: 'fat';
+    background-color: #060C18;
+    margin-bottom: -5%;
+    position:relative; z-index:3;
+     opacity:1;
+     font-size: 10px;
+    }
 }
 img {
   max-width: 100%;
