@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4bcf36a.css",
-    "main.js": "/static/js/main.5c172c03.js",
+    "main.css": "/static/css/main.f408c95e.css",
+    "main.js": "/static/js/main.fe9820b3.js",
     "static/js/453.e9a0cd7c.chunk.js": "/static/js/453.e9a0cd7c.chunk.js",
     "static/media/diagram.png": "/static/media/diagram.3313dcba7a8cc8aa6a2b.png",
     "static/media/2.png": "/static/media/2.135eee55d47e7af6d0f2.png",
@@ -16,18 +16,19 @@
     "static/media/primeicons.ttf": "/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
     "static/media/BaiJamjuree-Bold.ttf": "/static/media/BaiJamjuree-Bold.da1cfc75e1ff64984f88.ttf",
     "static/media/referido 2.png": "/static/media/referido 2.570eafac018a9dbc13d1.png",
+    "static/media/Group 15.png": "/static/media/Group 15.43eeaeff97ede35a3581.png",
     "static/media/Rectangle 41.png": "/static/media/Rectangle 41.d2a475472fda38512762.png",
     "static/media/primeicons.woff2": "/static/media/primeicons.024b32cc7bf399b1a847.woff2",
     "static/media/Estructura Técnica y Modelo económico.png": "/static/media/Estructura Técnica y Modelo económico.7e3a7fcbccd7066e4eeb.png",
     "static/media/Bienvenidos a Traishunt (dex)@2x.png": "/static/media/Bienvenidos a Traishunt (dex)@2x.7225dd4f4934783c7591.png",
     "static/media/Rectangle 43.png": "/static/media/Rectangle 43.45d74fd58795fe8492e4.png",
     "index.html": "/index.html",
-    "main.a4bcf36a.css.map": "/static/css/main.a4bcf36a.css.map",
-    "main.5c172c03.js.map": "/static/js/main.5c172c03.js.map",
+    "main.f408c95e.css.map": "/static/css/main.f408c95e.css.map",
+    "main.fe9820b3.js.map": "/static/js/main.fe9820b3.js.map",
     "453.e9a0cd7c.chunk.js.map": "/static/js/453.e9a0cd7c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4bcf36a.css",
-    "static/js/main.5c172c03.js"
+    "static/css/main.f408c95e.css",
+    "static/js/main.fe9820b3.js"
   ]
 }
