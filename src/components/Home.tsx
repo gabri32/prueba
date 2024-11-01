@@ -303,7 +303,7 @@ const Home: React.FC = () => {
           </div>
           <div ref={accordionRef} className={styles.accordion}>
           <section className={styles.faq2}>
-        <h2>Preguntas frecuentes</h2>
+        <h2>Distribución</h2>
         <details>
           <summary>5% Pre-venta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div className={styles.cantidad}><span>1.050.000 tokens</span></div> </summary>
           <p>Descripción sobre Traishunt...</p>
