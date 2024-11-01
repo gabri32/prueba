@@ -41,6 +41,7 @@ import referido from "./referido 2.png";
 import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
 import { useEffect, useRef } from 'react';
+import roadmap from './RoadMap.png';
 const Home: React.FC = () => {
   const items = [
     { label: 'Roadmap', icon: 'pi pi-fw pi-map', url: '#roadmap' },
@@ -118,8 +119,10 @@ const Home: React.FC = () => {
       <div className={styles.cuerpo}>
         <br />
         <br />
+    
         <div className={styles.contenedordetexto}>
           <h1>Desbloquea <br /> el <br /> futuro</h1>
+       
         </div>
 
         <img src={letterTrainsImage} alt="Traishunt Logo" />
@@ -134,12 +137,18 @@ const Home: React.FC = () => {
       </div>
       
       <div className={styles.container2}>
+      <div className={styles.barpoints}>
+         <img src={barpoints} alt="" />
+         </div>
         <div className={styles.bloquemap}>
-
+       
           <img src={titletrais} alt="Traishunt Logo" />
           <p><span>Traishunt</span> es más que una criptomoneda; es la práctica de descubrir las oportunidades ocultas que el mercado ofrece,un ecosistema Defi, guiándote hacia un crecimiento financiero que antes parecía inalcanzable. Pero esto no se limita a las finanzas: es también una metáfora de la vida. Es el arte de perseguir tus sueños y metas con una perseverancia inquebrantable, siguiendo los rastros que te conducirán al éxito. Únete a nosotros en esta búsqueda incansable. Aquí, cada pista, cada rastro que sigues, te acerca un paso más a hacer realidad tus ambiciones. ¡Bienvenido al lugar donde la determinación se encuentra con la oportunidad</p>
         </div>
         <div>
+          <div className={styles.roadmap}>
+            <img src={roadmap} alt="" />
+          </div>
           <div className={styles.slidercontainer}>
             <div className={styles.slider}>
               <div className={styles.card}><h1>Q4 2024</h1>
@@ -246,8 +255,9 @@ const Home: React.FC = () => {
 
 
             </div>
+        
           </div>
-
+        
         </div>
       </div>
       <div className={styles.container3}>

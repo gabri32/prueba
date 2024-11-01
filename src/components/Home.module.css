@@ -20,6 +20,22 @@ overflow-x: hidden;
   align-items: center; /* Centrar verticalmente */
 
 }
+.barpoints {
+  height: 50px;
+}
+.roadmap{
+  position: relative;
+  left:45%;
+  width: 50%;
+  padding-top: 30px;
+}
+.barpoints img{
+position: relative;  
+width: 10%;
+left: 10%;
+height: 200vh;
+}
+
 
 .container2{
   width: 100%;
@@ -93,6 +109,7 @@ overflow-x: hidden;
   scrollbar-width: thin; /* Estilo para navegadores Firefox */
   scrollbar-color: #04F1A9 transparent;
   z-index: 3; /* Color para la scrollbar en Firefox */
+  padding:25px;
 }
 
 /* Estilo para la barra de desplazamiento en navegadores WebKit (Chrome, Safari, Edge) */
@@ -316,6 +333,21 @@ p {
     color: #07EFBD;
     text-align: center;
     width: 100%;
+  }
+  .barpoints {
+    height: 50px;
+  }
+  .roadmap{
+    position: relative;
+    left:25%;
+    width: 50%;
+    padding-top: 30px;
+  }
+  .barpoints img{
+  position: relative;  
+  width: 18%;
+  left: 10%;
+  height: 150vh;
   }
 }
 img {
@@ -1123,6 +1155,183 @@ color: white;
 .fase:nth-child(2) .info {
   color: #9f80f8;
 }
+/* Estilos para pantallas de 768px de ancho o menos (tablets y móviles) */
+@media (max-width: 768px) {
+
+  .walletconection{
+    width: 55%;
+    height: 35%;
+    position: relative;
+     left: 0%;
+    background-color: #ffffff00;
+   align-items: center;
+   text-align: center;  
+   justify-content: center; 
+   top:-3%;
+   }
+   .conection {
+     width: 182%;
+     height: 70%;
+     border-radius: 10px;
+     border: 1px solid #04F1A9;
+     background-color: #060c1862; /* Fallback por si el gradiente no se soporta */
+     position: relative;
+     top: -5vh;
+     left: 0;
+     text-align: center;
+   
+   }
+   .contenedorcontador2 {
+     border-radius: 10px;
+     width: 90%;
+     margin-bottom: 0%;
+     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+     margin-left: 5%;
+     font-family: 'fat';
+     font-size: 1vh;
+     background-color: #060C18;
+     margin-bottom: auto;
+     top: 5%;
+     position: relative;
+      opacity:1}
+      .conection::before {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: linear-gradient(
+         170deg,
+         rgba(87, 47, 168, 1) 0%,
+         rgba(255, 255, 255, 0) 50%
+       );
+       border-radius: inherit; /* Respeta el borde redondeado del contenedor padre */
+       pointer-events: none; /* No interferirá con los eventos del contenido */
+       z-index: -1; /* Asegura que el pseudo-elemento quede detrás del contenido */
+     }
+     .prices{
+       position: relative;
+       top: 5%;
+     }
+   .conection::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(
+       300deg,
+       rgb(144, 0, 255)10%,
+       rgba(255, 255, 255, 0) 50%
+     );
+     border-radius: inherit; /* Respeta el borde redondeado del .fase */
+     pointer-events: none; /* El pseudo-elemento no interferirá con el contenido de .fase */
+     z-index: -1; 
+   }
+   .conection img{
+    position: relative;
+   width: 150%;
+   
+   }
+   .preventa{
+     position: relative;
+    
+   
+   }
+   .progresscontainer {
+     width: 80%;
+     background-color: #e0e0e0;
+     border-radius: 25px;
+     overflow: hidden;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+     margin-bottom: 20px;
+     position: relative;
+     left: 10%;
+     top: 8%;
+   }
+   
+   .progressbar {
+   
+     height: 30px;
+     width: 70%; /* Comienza con 0% de ancho */
+     background-color: #04F1A9; /* Color verde */
+     transition: width 0.5s ease; /* Transición suave al cambiar el ancho */
+   }
+   .walletconection img{
+     position: relative;
+   top: -10vh;
+   width: 60%;
+   left: 30%;
+   margin-bottom: 1%;
+   text-align: center;
+   }
+   .conection h2{
+     position: relative;
+   top: 2%;
+   padding: 5% 0% 2%;
+   color: #00e57a;
+   
+   
+   }
+   .f1{
+     width: 80%;
+     position: relative;
+     left: 10%;
+   margin-bottom: -4%;
+     text-align: start;
+   }
+   .f1 img{
+     position: relative;
+     top: 20%;
+     width: 80%;
+     left: 0;
+     line-height: 0%;
+     text-align: center;
+   }
+   .walletconection h4{
+     position: relative;
+   top: -10vh;
+   left: 30%;
+   color: #00af89;
+   width: 100%;
+   font-size: 4vw;
+   line-height: 0%;
+   text-align: center;
+   }
+   .fases {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     height: 40vh;
+   width: 180%;
+   
+   }
+   .buyToken {
+     border: 1px solid #00d089;
+     width: 80%;
+     font-size: 20px;
+     text-align: start;
+     background-color: #060C18;
+     color: #00d089;
+     border-radius: 10px;
+     height: 10%;
+     display: flex; /* Flexbox para alinear el contenido */
+     align-items: start; /* Alinea verticalmente */
+     justify-content: start; /* Alinea horizontalmente */
+     padding: 10px; /* Asegúrate de usar padding adecuado */
+     left: 10%;
+     top:2%;
+   position: relative;
+   }
+   .walletconection .countdown p{
+     color: #0bffae;
+   }
+}
+
 .contedorcohote{
   width: 100%;
   height: auto;
