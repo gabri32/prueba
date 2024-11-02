@@ -259,7 +259,7 @@ const Home: React.FC = () => {
         
         </div>
       </div>
-      
+      <br /><br /><br />
       <div className={styles.contenerdoble}>
       <div className={styles.container3_1}>
           <br />
@@ -474,7 +474,7 @@ const Home: React.FC = () => {
           <div className={styles.backfly}>
             <img src={cohete} alt="Traishunt prevent" className={styles.cohete} />
             <div className={styles.slidercontainer2}>
-              <div className={styles.slider}>
+              <div className={styles.slider2}>
                 <div className={styles.card2}>
                   <h5>Total de monedas:</h5>
                   <p>Se emitirán 21.000.0000 de monedas. Esta cifra es fija, lo que significa que no habrá emisión adicional después de alcanzar este límite.</p>

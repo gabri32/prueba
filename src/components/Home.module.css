@@ -140,7 +140,11 @@ margin-left: 10%;
   gap: 15px;
   z-index: 3;
 }
-
+.slider2 {
+  display: flex;
+  gap: 15px;
+  z-index: 3;
+}
 /* Estilo de cada card */
 .card {
   min-width: 331px;
@@ -1053,7 +1057,7 @@ text-align: center;
 .buyToken {
   border: 1px solid #00d089;
   width: 80%;
-  font-size: 20px;
+  font-size: 1vh;
   text-align: start;
   background-color: #060C18;
   color: #00d089;
@@ -1350,10 +1354,10 @@ color: white;
   scrollbar-width: thin; /* Estilo para navegadores Firefox */
   scrollbar-color: #04F1A9 transparent;
   z-index: 3; 
-  height: 50%;
+  height: 40%;
   left: 10%;
   position: absolute;
-top: 18%;
+top: 22%;
 }
 .card2{
   min-width: 371px;
@@ -1366,7 +1370,7 @@ top: 18%;
   flex-direction: column;    /* Coloca los elementos en columna (imagen arriba, texto abajo) */
   justify-content: start;  
   box-shadow: 0 1px 10px rgba(36, 198, 213, 0.562);
-  font-size: 1.4rem;
+  font-size: 2.9vh;
   border-radius: 10px;
   z-index: 3; 
   padding: 1%;
@@ -1376,7 +1380,7 @@ top: 18%;
 }
 .card2 p{
   color: white;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 .card2::before {
   content: '';
@@ -1938,5 +1942,48 @@ top:-10%;
     margin: 0 auto;
     color: #000;
     font-family: 'Arial', sans-serif;
+  }
+  .slidercontainer2{
+    width: 85%;
+    margin: 50px auto;
+    overflow-x: hidden; /* Permite el desplazamiento horizontal */
+    overflow-y: hidden; /* Evita el desplazamiento vertical */
+    display: grid;
+    align-items: center;
+    scrollbar-width: thin; /* Estilo para navegadores Firefox */
+    scrollbar-color: #04F1A9 transparent;
+    z-index: 3; 
+    height: 100%;
+    left: 10%;
+    position: absolute;
+  top: 0%;
+  }
+  .slider2 {
+    display: grid;
+    gap: 15px;
+    z-index: 3;
+  }
+  .card2{
+    min-width: 351px;
+    height: 110%;
+    background-color: rgba(16, 26, 62, 0.881); /* Color de fondo con transparencia */
+    backdrop-filter: blur(10px); /* Aplica el desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para navegadores WebKit */
+    border-radius: 15px; 
+    color: white;
+    flex-direction: column;    /* Coloca los elementos en columna (imagen arriba, texto abajo) */
+    justify-content: start;  
+    box-shadow: 0 1px 10px rgba(36, 198, 213, 0.562);
+    font-size: 2.2vh;
+    border-radius: 10px;
+    z-index: 3; 
+    padding: 1%;
+  }
+  .card2 h5{
+    color: #00af89;
+  }
+  .card2 p{
+    color: white;
+    font-size: 2.5vw;
   }
 }
