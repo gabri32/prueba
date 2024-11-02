@@ -259,9 +259,9 @@ const Home: React.FC = () => {
         
         </div>
       </div>
-      <br /><br /><br />
-      <div className={styles.container3}>
-        <div className={styles.container3_1}>
+      
+      <div className={styles.contenerdoble}>
+      <div className={styles.container3_1}>
           <br />
           <div className={styles.titulos}>
           <span className={styles.imagentituo}>
@@ -336,6 +336,10 @@ const Home: React.FC = () => {
       </section>
           </div>
         </div>
+      </div>
+      
+      <div className={styles.container3}>
+     
         <br />
         <div className={styles.container3_2}>
           <div className={styles.vectorfull}>
