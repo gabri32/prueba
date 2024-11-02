@@ -768,9 +768,8 @@ width: 30%;
   font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s;
-  position: absolute;
+  position: relative;
   left: 45%;
-  bottom: 5%; /* Asegura que esté alineado al fondo del contenedor */
 
 }
 
