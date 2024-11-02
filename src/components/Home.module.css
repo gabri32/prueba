@@ -495,7 +495,7 @@ margin: 0;
   position: relative;
 padding: 0%;
 margin: 0;
-   left: -6%; 
+   left: -9%; 
      
 }
 .titulos{
@@ -1808,22 +1808,32 @@ top:-10%;
   width: 80%;
   max-width: 800px;
   margin: 20px auto;
+  color: #000;
 }
+.faq details{
+  color: #000;
+  font-weight: 500;
+padding: 1%;
+}
+
 .faq2 {
   width: 80%;
   margin: 20px auto;
-  
+  color: #000;
 }
+
+
 .faq2 summary {
   cursor: pointer;
   padding: 10px;
   font-weight: bold;
   background: #0000;
   display: flex;
+  font-size: 2vh;
 }
 .faq2 details {
   background: #101A3E;
-  color: #04F1A9;
+  color: #ffffff;
   margin: 10px 0;
   border-radius: 5px;
   overflow: hidden;
@@ -1835,16 +1845,25 @@ top:-10%;
 }
 .faq2 span {
   background: #101A3E;
-  color: #fdfdfd;
+  color: #00e5b4;
   margin: 10px 0;
   border-radius: 5px;
   overflow: hidden;
   font-size: 2vh;
   text-align: end;
 }
+.faq2 p{
+  width: 120%;
+  position: relative;
+  margin: 20px auto;
+  color: #ffffff;
+  font-size: 3vh;
+  left: -21%;
+}
 .cantidad{
   width: 100%;
   text-align: end;
+  color: #00e57a;
 }
 .partof details {
   background: white;
