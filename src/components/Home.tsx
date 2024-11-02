@@ -52,7 +52,7 @@ const Home: React.FC = () => {
   const startDate = new Date('2024-10-04').getTime();
 
   // Fecha límite: 30 días después del 4 de octubre 2024
-  const countdownDate = startDate + 30 * 24 * 60 * 60 * 1000;
+  const countdownDate = startDate + 40 * 24 * 60 * 60 * 1000;
 
   const countdownRenderer = ({ days, hours, minutes, seconds }: any) => {
     return (
@@ -260,6 +260,7 @@ const Home: React.FC = () => {
         
         </div>
       </div>
+      <br /><br /><br />
       <div className={styles.container3}>
         <div className={styles.container3_1}>
           <br />
@@ -305,28 +306,33 @@ const Home: React.FC = () => {
           <section className={styles.faq2}>
         <h2>Distribución</h2>
         <details>
-          <summary>5% Pre-venta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div className={styles.cantidad}><span>1.050.000 tokens</span></div> </summary>
-          <p>Descripción sobre Traishunt...</p>
+          <summary>5% Pre-venta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div className={styles.cantidad}><span>1.050.000 tokens <br />
+         <p>        Objetivo:
+         Recaudar fondos iniciales para el desarrollo del proyecto.</p>
+          </span></div> </summary>
+  
+
+
         </details>
         <details>
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
-          <p>Información sobre el suministro...</p>
+        
         </details>
         <details>
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
-          <p>Información sobre el suministro...</p>
+       
         </details>
         <details>
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
-          <p>Información sobre el suministro...</p>
+        
         </details>
         <details>
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
-          <p>Información sobre el suministro...</p>
+          
         </details>
         <details>
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
-          <p>Información sobre el suministro...</p>
+      
         </details>
       </section>
           </div>
@@ -677,11 +683,51 @@ const Home: React.FC = () => {
         <h2>Preguntas frecuentes</h2>
         <details>
           <summary>¿Qué es Traishunt?</summary>
-          <p>Descripción sobre Traishunt...</p>
+          <p>Traishunt es una criptomoneda que busca revolucionar el mundo DeFi (finanzas
+descentralizadas) ofreciendo un ecosistema completo con un Exchange
+descentralizado (DEX), staking, pools de liquidez, y un sistema de
+compensación de 4 niveles. Además, está diseñada con un mecanismo de
+liberación de monedas único que proporciona control y seguridad a los
+inversionistas.</p>
         </details>
         <details>
           <summary>¿Cuál es el suministro total de Traishunt?</summary>
-          <p>Información sobre el suministro...</p>
+          <p>Traishunt tiene un suministro fijo de 21,000,000 de monedas. No habrá emisión
+          adicional después de alcanzar este límite, lo que asegura una oferta controlada.</p>
+        </details>
+        <details>
+          <summary>¿Cómo funciona el sistema de metas y ciclos de Traishunt?
+          </summary>
+          <p>El sistema de Traishunt está dividido en ciclos, cada uno con metas de recaudación
+de liquidez. Las metas comienzan con $100,000 USD en el primer ciclo y aumentan
+progresivamente hasta alcanzar los $500,000 USD. A medida que se alcanzan las
+metas, se desbloquea un porcentaje de las monedas adquiridas por los
+inversionistas.
+</p>
+        </details>
+        <details>
+          <summary>¿Qué sucede cuando se alcanza una meta?
+          </summary>
+          <p>Cuando se alcanza una meta, los inversionistas pueden vender un porcentaje de
+sus monedas adquiridas. Por ejemplo:
+● Al llegar a la Meta 1 de $100,000 USD, los inversionistas pueden vender
+hasta 20% de sus monedas.
+● Al alcanzar la Meta 2 de $200,000 USD, pueden vender hasta 40% (20% de
+la primera meta + 20% de la segunda).
+● En la Meta 3 de $300,000 USD, pueden vender hasta 60% (20% de cada una
+de las tres primeras metas), y así sucesivamente hasta llegar al 100% en la
+Meta 5.
+</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Traishunt tiene un suministro fijo de 21,000,000 de monedas. No habrá emisión
+          adicional después de alcanzar este límite, lo que asegura una oferta controlada.</p>
+        </details>
+        <details>
+          <summary>¿Cuál es el suministro total de Traishunt?</summary>
+          <p>Traishunt tiene un suministro fijo de 21,000,000 de monedas. No habrá emisión
+          adicional después de alcanzar este límite, lo que asegura una oferta controlada.</p>
         </details>
         {/* Agrega más FAQs según sea necesario */}
       </section>
