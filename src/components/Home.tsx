@@ -94,8 +94,7 @@ const Home: React.FC = () => {
           </div>
           <div className={styles.footerSection}>
             <h3>Contactos</h3>
-            <p>+57 3113637361</p>
-            <p>+57 3113637361</p>
+            <p>+57 31111111</p>
             <p>
               <a href="mailto:preventatrialshunt@gmail.com">
                 preventatrialshunt@gmail.com
@@ -345,8 +344,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className={styles.container4}>
-        <div className={styles.banner}>
+      <div className={styles.containerbaner}>
+      <div className={styles.banner}>
           <div className={styles.imageSection}>
             <img src={pareja} alt="Pareja" className={styles.coupleImage} />
           </div>
@@ -398,6 +397,9 @@ const Home: React.FC = () => {
           </div>
 
         </div>
+      </div>
+      <div className={styles.container4}>
+       
 
         <div className={styles.walletconection}>
           <img src={letterTrainsImage} alt="Traishunt Logo" />
