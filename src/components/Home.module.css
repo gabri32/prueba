@@ -496,9 +496,9 @@ margin: 0;
      
 }
 .titulos{
-  width: 50%;
+  width: 70%;
   position: relative;
-  left: 36%;
+  left: 35%;
 }
 .container3_1 span div{
   text-align: justify;
@@ -513,6 +513,7 @@ margin: 0;
   gap: 1px; /* Espaciado entre tarjetas */
  position: relative;
  align-items: center;
+ font-size: 5px;
 }
 
 .tokencard {
@@ -531,7 +532,7 @@ width: 80%;
   padding: 0; /* Elimina cualquier padding adicional */}
 
 .content h3 {
-  font-size: 18px;
+  font-size: 11px;
   font-weight: bold;
   color: #000;
     margin: 5px 0; /* Ajusta el margen superior e inferior a 5px */
@@ -539,7 +540,7 @@ width: 80%;
 }
 
 .content p {
-  font-size: 14px;
+  font-size: 12px;
   color: #000;
 }
 
@@ -1119,7 +1120,8 @@ top: 22%;
 }
 .whitecontainer {
   background-color: white;
-  padding: 2em;
+  padding-top: 3em;
+  padding-bottom: 2em;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -1644,7 +1646,7 @@ padding: 1%;
      position: relative;
      left: -16%;
      text-align: center;
-   top:-28%
+   top:-25%
    }
  
    .contenedorcontador2 {
@@ -1732,7 +1734,7 @@ padding: 1%;
    }
    .walletconection img{
      position: relative;
-   top: -28vh;
+   bottom: 0vh;
    width: 30%;
    left: -1%;
    margin-bottom: 1%;
@@ -1740,7 +1742,7 @@ padding: 1%;
    }
    .walletconection h4{
     position: relative;
-  top: -28vh;
+  bottom: 0%;
   color: #00af89;
   width: 100%;
   font-size: 3vw;
@@ -1952,7 +1954,8 @@ margin-top: 0%;
 left: 0;
     position:relative;
     top: -22%;
-    left: -3%;
+    left: 0%;
+    padding: 50px;
   }
   
   .banner h1 {
@@ -2010,13 +2013,13 @@ left: 0;
     color: #0d2747;
     border: none;
     border-radius: 30px;
-    font-size: 1.5vh;
+    font-size: 10px;
     cursor: pointer;
     font-weight: 900;
     transition: background-color 0.3s;
     position: absolute;
-    left: 16%;
-    bottom: 14%; /* Asegura que esté alineado al fondo del contenedor */
+    left: 18%;
+    bottom: 16%; /* Asegura que esté alineado al fondo del contenedor */
   
   }
 }
@@ -2088,7 +2091,8 @@ left: 0;
     gap: 10px; /* Espaciado entre tarjetas */
   align-items: center;
     position: relative;
-    left: 25%;
+    left: 23%;
+    font-size: 0px;
    
   }
   .tokencard {
@@ -2104,7 +2108,7 @@ left: 0;
   .titulos{
     width: 50%;
     position: relative;
-    left: 25%;
+    left: 30%;
   }
 
  
@@ -2328,7 +2332,7 @@ left: 0;
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 1250px; /* Alto completo de la pantalla */
+    height: 1100px; /* Alto completo de la pantalla */
     background-color: #093763; /* Color de fondo base */
     
     background-image: 
