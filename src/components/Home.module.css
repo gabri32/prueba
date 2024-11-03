@@ -315,56 +315,7 @@ p {
   text-align: center;
   width: 100%;
 }
-@media (max-width: 768px) {
-  .cuerpo p{
-    text-align: start;
-    width: 30%;
-    margin-left: 10%;
-  }
-  
-  h1 {
-    font-size: 4vw;
-    color: #f8f8f8;
-    margin-bottom: 20px;
-    font-family: 'fat';
-  }
-  
-  p {
-    font-size: 3.5vw;
-    margin-top: 10px;
-    color: #07EFBD;
-    text-align: center;
-    width: 100%;
-  }
-  .barpoints {
-    height: 50px;
-  }
-  .roadmap{
-    position: relative;
-    left:25%;
-    width: 50%;
-    padding-top: 30px;
-  }
-  .barpoints img{
-  position: relative;  
-  width: 18%;
-  left: 10%;
-  height: 150vh;
-  }
-  .contenedorcontador {
-    border-radius: 10px;
-    width: 100%;
-    margin-bottom: 0%;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    margin-left: 0%;
-    font-family: 'fat';
-    background-color: #060C18;
-    margin-bottom: -5%;
-    position:relative; z-index:3;
-     opacity:1;
-     font-size: 10px;
-    }
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -622,62 +573,12 @@ width: 80%;
 .accordionitem.open .toggleicon {
   transform: rotate(180deg);
 }
-@media (max-width: 768px) {
-  .container3 {
-    background-image: 
-      linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
-      url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repetición */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-    height: 50vh; /* Asegúrate de tener una altura definida */
-    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-    align-items: center;       /* Alinea los elementos horizontalmente al centro */
-    text-align: center;   
-  }
-  .container3_1 {
-    width: 100%;
-    left: -15%;
-    margin-bottom: 0%;
-    background: linear-gradient(to top left,  rgb(87, 47, 168) 5%,#0bebc2);
-    position: relative;
-    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-    align-items: center;       /* Alinea los elementos horizontalmente al centro */
-    text-align: center;  
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); 
-      border-radius: 0%;
-  }
-  .tokencardscontainer {
-    display: grid;
-    justify-content: space-between;
-    gap: 10px; /* Espaciado entre tarjetas */
-  align-items: center;
-    position: relative;
-    left: 25%;
-   
-  }
-  .tokencard {
-    margin: 0 auto;
-    background-color: #00d2c4;
-    border: 3px solid rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    width: 100%;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .titulos{
-    width: 50%;
-    position: relative;
-    left: 25%;
-  }
-}
+
 /* FIN Contenedor del acordeón */
 .container3_2{
   position:relative;
   width: 100%;
   top:0%;
-padding-bottom: 100vh;
   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
   align-items: center;       /* Alinea los elementos horizontalmente al centro */
   text-align: center;    
@@ -692,18 +593,7 @@ width: 70%;
 .vectorfull{
   display: block;
 }
-@media (max-width: 768px) {
-  .container3_2 img{
-    top: 10%;
-    width: 99%;
-       justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-      align-items: center;       /* Alinea los elementos horizontalmente al centro */
-      text-align: center;    
-    }
-    .vectorfull{
-      display: block;
-    }
-}
+
 /*Banner*/
 .containerbaner {
   /* Ajustamos el tamaño del contenedor */
@@ -816,110 +706,7 @@ width: 30%;
   background-color: #1cd89d;
 }
 /* Estilos para pantallas de 768px de ancho o menos (tablets y móviles) */
-@media (max-width: 668px) {
-  .containerbaner{
-height: 1100px;
-  }
-  .banner {
- left: 50%;
-    display: grid;
-    background-color: #0f1e36;
-    border-radius: 15px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    position: relative;
-    text-align: center;
-  }
-  
-  .banner .imageSection {
-    flex: 1;
-  width: 50%;
 
-  }
-  
-  .banner .coupleImage {
-    position: absolute; /* Cambiamos a absoluto para fijarlo al final */
-    width: 75%;
-    bottom: 0; 
-    left: 10%;/* Asegura que esté alineado al fondo del contenedor */
-  }
-  
-  .banner .contentSection {
-    flex: 2;
-    max-width: 100%;
-margin-top: 0%;
-left: 0;
-    position:relative;
-    top: -22%;
-    left: -3%;
-  }
-  
-  .banner h1 {
-    font-size: 3.8vw;
-    color: #22ffb3;
-    margin-bottom: 10px;
-    line-height: 80%;
-    text-align: center;
-  }
-  
-  .titlepcontent  {
-    margin-bottom: 10px;
-    font-size: 1.8vh;
-    line-height: 90%;
-    color: #ffffff;
-    text-align: center;
-
-  }
-  .titlepcontent2{
-    color: #00af89;
-    font-size: 1.5vh;
-    line-height: 90%;
-  }
-  .banner .benefits {
-    display: grid;
-    justify-content: space-between;
-    margin-top: 2%;
-    gap: 2%;
-    
-  }
-  .benefits{
-    position: relative;
-    left: 8%;
-  }
-  .banner .benefitItem {
-    text-align: center;
-    flex: 1;
-    margin: 0 10px;
-  }
-  
-  .banner .benefitItem img {
-    width: 25%;
-    margin-bottom: 10px;
-  }
-  
-  .banner .benefitItem h3 {
-    font-size: 4vw;
-    margin-bottom: 5px;
-  }
-  
-  .banner .ctaButton {
-    margin-top: 0%;
-    padding: 5px 5px;
-    background-color: #22ffb3;
-    color: #0d2747;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.5vh;
-    cursor: pointer;
-    font-weight: 900;
-    transition: background-color 0.3s;
-    position: absolute;
-    left: 16%;
-    bottom: 14%; /* Asegura que esté alineado al fondo del contenedor */
-  
-  }
-}
 
 .container4 {
   background-image: 
@@ -1197,112 +984,7 @@ top: 5%;
   position: relative; /* Necesario para que el pseudo-elemento se posicione dentro del .fase */
   overflow: hidden; /* Para evitar que el brillo se salga del borde */
 }
-@media (max-width: 968px) {
-  .walletconection{
-    width: 60%;
-    height: 30%;
-    position: relative;
-    left: 20%;  
-    background-color: #ffffff00;
-   align-items: center;
-   text-align: center;  
-   justify-content: center; 
-   top: 6%;
-   font-size: 2vh;
-   }
 
-    .container4 {
-      background-image: 
-          /* Primer gradiente (arriba derecha) */
-          linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
-          /* Segundo gradiente (arriba izquierda) */
-          linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
-          /* Imagen de fondo */
-          url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-          flex-direction: column; 
-      background-position: center; /* Centra la imagen */
-      background-repeat: no-repeat; /* Evita repetición */
-      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-      
-      height: 500vh; /* Asegúrate de tener una altura definida */
-      
-      display: flex; /* Habilita flexbox */
-      flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-      justify-content: center; /* Centra el contenido verticalmente */
-      text-align: center; /* Alinea el texto horizontalmente */
-    }
-    
-}
-@media (max-width: 468px) {
-  .container4 {
-    background-image: 
-        /* Primer gradiente (arriba derecha) */
-        linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
-        /* Segundo gradiente (arriba izquierda) */
-        linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
-        /* Imagen de fondo */
-        url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-        flex-direction: column; 
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repetición */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-    
-    height: 200vh; /* Asegúrate de tener una altura definida */
-    
-    display: flex; /* Habilita flexbox */
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    text-align: center; /* Alinea el texto horizontalmente */
-  }
-  
-  .walletconection{
-   width: 100%;
-   height: 35%;
-   position: relative;
-   left: 0%;  
-   background-color: #ffffff00;
-  align-items: center;
-  text-align: center;  
-  justify-content: center; 
-  top: 9%;
-  font-size: 1vh;
-  }
-  .conection {
-    width: 75%;
-    height: 70%;
-    border-radius: 10px;
-    border: 1px solid #04F1A9;
-    background-color: #060c1862; /* Fallback por si el gradiente no se soporta */
-    position: relative;
-    left: 12%;
-    text-align: center;
-  top:-15%
-  }
-  .fase {
-    background-color: #0b2342;
-    border: 1px solid #00d089;
-    border-radius: 8px;
-    padding: 20px;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #f8f8f8;
-    top: -35%;
-    position: relative; /* Necesario para que el pseudo-elemento se posicione dentro del .fase */
-    overflow: hidden; /* Para evitar que el brillo se salga del borde */
-  }
-  .fases {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 0vh;
-  
-  
-  }
-}
 .fase::before {
   content: '';
   position: absolute;
@@ -1599,70 +1281,7 @@ top:-10%;
   margin-bottom: 0.5em;
   color: #00e5b4;
 }
-@media (max-width: 968px) {
-  .section {
-    background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);
-    padding: 1.5em;
-    border-radius: 8px;
-    margin-bottom: 1.5em;
-    width: 100%;
-    left: 0%;
-    position: relative;
-  }
-  
-  .section2{
-    padding: 1.5em;
-    border-radius: 8px;
-    margin-bottom: 1.5em;
-    width: 100%;
-    left: 0%;
-    position: relative;
-  }
-  .goal {
-    background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);  padding: 1em;
-    border-radius: 8px;
-    width: 100vh;
-    flex-basis: 30%;
-    min-width: 1000px;
-  }
 
-}
-@media (max-width: 768px) {
-  .level1, .level2, .level3 {
-    background-color: #04F1A9;
-    border-radius: 8px;
-    padding: 1em;
-    width: 100%;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
-  
-  }
-  .bonusLevels {
-    display: grid;
-    justify-content: space-between;
-    gap: 1em;
-    
-  }
-  .bonuses h3{
-    color: #000;
-  
-  }
-  .bonusLevels h4{
-    color: #000;
-    font-size: 3vw;
-    line-height: 78%;
-  }
-  .bonusLevels p{
-    color: #101A3E;
-    font-size: 2.5vw;
-    padding: 10px;
-    font-weight: 500;
-  }
-  .bonusLevels span{
-    color: #ffffff;
-    font-size: 3vw;
-  }
-
-}
 .goals {
   display: flex;
   flex-wrap: wrap;
@@ -1702,25 +1321,7 @@ top:-10%;
   position: relative;
   left: 10%;
 }
-@media (max-width: 768px) {
-  .whytrias {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(90deg, #b2f9fc, #d3f3fa);
-    padding: 40px;
-    border-radius: 12px;
-    width: 100%;
-    position: relative;
-    left: 0%;
-  }
-  .contenedorInfo{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1200px;
-  }
-}
+
 .titulo {
   max-width: 80%;
   margin-bottom: 30px;
@@ -1990,7 +1591,399 @@ padding: 1%;
 .socialIcons a img:hover {
   transform: scale(1.1);
 }
+@media (max-width: 968px) {
+
+  .walletconection{
+    width: 60%;
+    height: 30%;
+    position: relative;
+    left: 20%;  
+    background-color: #ffffff00;
+   align-items: center;
+   text-align: center;  
+   justify-content: center; 
+   top: 6%;
+   font-size: 2vh;
+   }
+  
+    .container3 {
+      background-image: 
+        linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
+        url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita repetición */
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+      height: 160vh; /* Asegúrate de tener una altura definida */
+      justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+      align-items: center;       /* Alinea los elementos horizontalmente al centro */
+      text-align: center;   
+    }
+   .container2{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 1050px; /* Alto completo de la pantalla */
+    background-color: #093763; /* Color de fondo base */
+    
+    background-image: 
+     
+      url('2.png'); /* Imagen de fondo */
+  
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-size: cover; /* Imagen cubre todo el contenedor */
+    color: #fff;
+  }
+    .container4 {
+      background-image: 
+          /* Primer gradiente (arriba derecha) */
+          linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
+          /* Segundo gradiente (arriba izquierda) */
+          linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
+          /* Imagen de fondo */
+          url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+          flex-direction: column; 
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita repetición */
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+      
+      height: 500vh; /* Asegúrate de tener una altura definida */
+      
+      display: flex; /* Habilita flexbox */
+      flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+      justify-content: center; /* Centra el contenido verticalmente */
+      text-align: center; /* Alinea el texto horizontalmente */
+    }
+    .section {
+      background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      width: 100%;
+      left: 0%;
+      position: relative;
+    }
+    
+    .section2{
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      width: 100%;
+      left: 0%;
+      position: relative;
+    }
+    .goal {
+      background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);  padding: 1em;
+      border-radius: 8px;
+      width: 100vh;
+      flex-basis: 30%;
+    }
+    .container3_2{
+      position:relative;
+      width: 100%;
+      top:0%;
+      justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+      align-items: center;       /* Alinea los elementos horizontalmente al centro */
+      text-align: center;    
+    }
+}
+@media (max-width: 468px) {
+  .container4 {
+    background-image: 
+        /* Primer gradiente (arriba derecha) */
+        linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
+        /* Segundo gradiente (arriba izquierda) */
+        linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
+        /* Imagen de fondo */
+        url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+        flex-direction: column; 
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    
+    height: 200vh; /* Asegúrate de tener una altura definida */
+    
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Alinea el texto horizontalmente */
+  }
+  
+  .walletconection{
+   width: 100%;
+   height: 35%;
+   position: relative;
+   left: 0%;  
+   background-color: #ffffff00;
+  align-items: center;
+  text-align: center;  
+  justify-content: center; 
+  top: 9%;
+  font-size: 1vh;
+  }
+  .conection {
+    width: 75%;
+    height: 70%;
+    border-radius: 10px;
+    border: 1px solid #04F1A9;
+    background-color: #060c1862; /* Fallback por si el gradiente no se soporta */
+    position: relative;
+    left: 12%;
+    text-align: center;
+  top:-15%
+  }
+  .fase {
+    background-color: #0b2342;
+    border: 1px solid #00d089;
+    border-radius: 8px;
+    padding: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f8f8f8;
+    top: -35%;
+    position: relative; /* Necesario para que el pseudo-elemento se posicione dentro del .fase */
+    overflow: hidden; /* Para evitar que el brillo se salga del borde */
+  }
+  
+  .fases {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+  
+  
+  }
+}
+@media (max-width: 668px) {
+  .containerbaner{
+height: 1030px;
+  }
+  .banner {
+ left: 50%;
+    display: grid;
+    background-color: #0f1e36;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: relative;
+    text-align: center;
+  }
+  
+  .banner .imageSection {
+    flex: 1;
+  width: 50%;
+
+  }
+  
+  .banner .coupleImage {
+    position: absolute; /* Cambiamos a absoluto para fijarlo al final */
+    width: 75%;
+    bottom: 0; 
+    left: 10%;/* Asegura que esté alineado al fondo del contenedor */
+  }
+  
+  .banner .contentSection {
+    flex: 2;
+    max-width: 100%;
+margin-top: 0%;
+left: 0;
+    position:relative;
+    top: -22%;
+    left: -3%;
+  }
+  
+  .banner h1 {
+    font-size: 3.8vw;
+    color: #22ffb3;
+    margin-bottom: 10px;
+    line-height: 80%;
+    text-align: center;
+  }
+  
+  .titlepcontent  {
+    margin-bottom: 10px;
+    font-size: 1.8vh;
+    line-height: 90%;
+    color: #ffffff;
+    text-align: center;
+
+  }
+  .titlepcontent2{
+    color: #00af89;
+    font-size: 1.5vh;
+    line-height: 90%;
+  }
+  .banner .benefits {
+    display: grid;
+    justify-content: space-between;
+    margin-top: 2%;
+    gap: 2%;
+    
+  }
+  .benefits{
+    position: relative;
+    left: 8%;
+  }
+  .banner .benefitItem {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .banner .benefitItem img {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  
+  .banner .benefitItem h3 {
+    font-size: 4vw;
+    margin-bottom: 5px;
+  }
+  
+  .banner .ctaButton {
+    margin-top: 0%;
+    padding: 5px 5px;
+    background-color: #22ffb3;
+    color: #0d2747;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5vh;
+    cursor: pointer;
+    font-weight: 900;
+    transition: background-color 0.3s;
+    position: absolute;
+    left: 16%;
+    bottom: 14%; /* Asegura que esté alineado al fondo del contenedor */
+  
+  }
+}
 @media (max-width: 768px) {
+  .cuerpo p{
+    text-align: start;
+    width: 30%;
+    margin-left: 10%;
+  }
+  
+  h1 {
+    font-size: 4vw;
+    color: #f8f8f8;
+    margin-bottom: 20px;
+    font-family: 'fat';
+  }
+  
+  p {
+    font-size: 3.5vw;
+    margin-top: 10px;
+    color: #07EFBD;
+    text-align: center;
+    width: 100%;
+  }
+  .barpoints {
+    height: 50px;
+  }
+  .roadmap{
+    position: relative;
+    left:25%;
+    width: 50%;
+    padding-top: 30px;
+  }
+  .barpoints img{
+  position: relative;  
+  width: 18%;
+  left: 10%;
+  height: 150vh;
+  }
+  .contenedorcontador {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 0%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 0%;
+    font-family: 'fat';
+    background-color: #060C18;
+    margin-bottom: -5%;
+    position:relative; z-index:3;
+     opacity:1;
+     font-size: 10px;
+    }
+  .container3_1 {
+    width: 100%;
+    left: -15%;
+    margin-bottom: 0%;
+    background: linear-gradient(to top left,  rgb(87, 47, 168) 5%,#0bebc2);
+    position: relative;
+    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;       /* Alinea los elementos horizontalmente al centro */
+    text-align: center;  
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); 
+      border-radius: 0%;
+  }
+  .tokencardscontainer {
+    display: grid;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre tarjetas */
+  align-items: center;
+    position: relative;
+    left: 25%;
+   
+  }
+  .tokencard {
+    margin: 0 auto;
+    background-color: #00d2c4;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .titulos{
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
+
+  .container3_2{
+    position:relative;
+    width: 100%;
+    top:0%;
+    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;       /* Alinea los elementos horizontalmente al centro */
+    text-align: center;    
+  }
+  .container3_2 img{
+    top: 10%;
+    width: 89%;
+       justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+      align-items: center;       /* Alinea los elementos horizontalmente al centro */
+      text-align: center;    
+    }
+    .vectorfull{
+      display: block;
+    }
+    .whytrias {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(90deg, #b2f9fc, #d3f3fa);
+      padding: 40px;
+      border-radius: 12px;
+      width: 100%;
+      position: relative;
+      left: 0%;
+    }
+    .contenedorInfo{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 1200px;
+    }
+  
   .footerContainer {
     display: grid;
     justify-content: space-around;
@@ -2075,6 +2068,7 @@ padding: 1%;
   .card2 h5{
     color: #00af89;
   }
+
   .card2 p{
     color: white;
     font-size: 2.5vw;
@@ -2093,5 +2087,50 @@ padding: 1%;
   .navbar {
     background-color: #00e57a00;
     padding: 3%;
+  }
+  .container3 {
+    background-image: 
+      linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
+      url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    height: 50vh; /* Asegúrate de tener una altura definida */
+    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;       /* Alinea los elementos horizontalmente al centro */
+    text-align: center;   
+  }
+  .level1, .level2, .level3 {
+    background-color: #04F1A9;
+    border-radius: 8px;
+    padding: 1em;
+    width: 100%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
+  
+  }
+  .bonusLevels {
+    display: grid;
+    justify-content: space-between;
+    gap: 1em;
+    
+  }
+  .bonuses h3{
+    color: #000;
+  
+  }
+  .bonusLevels h4{
+    color: #000;
+    font-size: 3vw;
+    line-height: 78%;
+  }
+  .bonusLevels p{
+    color: #101A3E;
+    font-size: 2.5vw;
+    padding: 10px;
+    font-weight: 500;
+  }
+  .bonusLevels span{
+    color: #ffffff;
+    font-size: 3vw;
   }
 }
