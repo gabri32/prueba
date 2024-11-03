@@ -113,7 +113,13 @@ const Home: React.FC = () => {
   return (
     <div className={styles.container}>
       {/* Menú de Navegación */}
-      <Menubar model={items} className={styles.menubar} />
+      <nav className={styles.navbar}>
+        <ul className={styles.menu}>
+            <li><a href="#home">ROADMAP</a></li>
+            <li><a href="#services">PREVENTA</a></li>
+            <li><a href="#about"> FAQ</a></li>
+        </ul>
+    </nav>
 
       <div className={styles.cuerpo}>
         <br />
@@ -126,6 +132,7 @@ const Home: React.FC = () => {
 
         <img src={letterTrainsImage} alt="Traishunt Logo" />
         <p>Sé parte de la revolución <br />en Finanzas descentralizadas</p>
+        <br />
         <Button label="Participa Preventa" className="p-button-rounded " />
         {/* Contador con cuenta regresiva */}
         <br />
@@ -306,6 +313,7 @@ const Home: React.FC = () => {
         <h2>Distribución</h2>
         <details>
           <summary>5% Pre-venta: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <div className={styles.cantidad}><span>1.050.000 tokens <br />
+        <br />
          <p>  Objetivo:Recaudar fondos iniciales para el desarrollo del proyecto.</p>
           </span></div> </summary>
   
