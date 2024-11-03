@@ -1597,26 +1597,7 @@ padding: 1%;
     text-align: center;   
   }
 
-  .container4 {
-    background-image: 
-        /* Primer gradiente (arriba derecha) */
-        linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
-        /* Segundo gradiente (arriba izquierda) */
-        linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
-        /* Imagen de fondo */
-        url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-        flex-direction: column; 
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repetición */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-    
-    height: 200vh; /* Asegúrate de tener una altura definida */
-    
-    display: flex; /* Habilita flexbox */
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    text-align: center; /* Alinea el texto horizontalmente */
-  }
+ 
   
   .walletconection{
    width: 100%;
@@ -2084,26 +2065,7 @@ left: 0;
     background-size: cover; /* Imagen cubre todo el contenedor */
     color: #fff;
   }
-    .container4 {
-      background-image: 
-          /* Primer gradiente (arriba derecha) */
-          linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
-          /* Segundo gradiente (arriba izquierda) */
-          linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
-          /* Imagen de fondo */
-          url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-          flex-direction: column; 
-      background-position: center; /* Centra la imagen */
-      background-repeat: no-repeat; /* Evita repetición */
-      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-      
-      height: 500vh; /* Asegúrate de tener una altura definida */
-      
-      display: flex; /* Habilita flexbox */
-      flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-      justify-content: center; /* Centra el contenido verticalmente */
-      text-align: center; /* Alinea el texto horizontalmente */
-    }
+    
     .section {
       background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);
       padding: 1.5em;
