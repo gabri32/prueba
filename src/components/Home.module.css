@@ -713,7 +713,7 @@ width: 30%;
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
   
-  height: 420vh; /* Asegúrate de tener una altura definida */
+  height: 2000px; /* Asegúrate de tener una altura definida */
   
   display: flex; /* Habilita flexbox */
   flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
