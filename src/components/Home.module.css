@@ -594,7 +594,6 @@ width: 80%;
   align-items: center; /* Centrar verticalmente */
   justify-content: center; /* Centrar horizontalmente */
   width: 100%;
-  
   background-image:
       /* Mitad superior azul oscuro */
       linear-gradient(to bottom, #08101c 50%, transparent 50%),
@@ -609,10 +608,10 @@ width: 80%;
   border-radius: 15px;
   padding: 30px;
   width: 80%;
-  max-height: 600px;
+  max-height: 1000px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: absolute; /* Esto hará que flote dentro del contenedor padre */
-  top: 50%; /* Centra verticalmente */
+  top: 70%; /* Centra verticalmente */
   left: 50%; /* Centra horizontalmente */
   transform: translate(-50%, -50%); /* Ajusta la posición al centro */
   z-index: 1; /* Asegura que esté sobre otros elementos */
@@ -638,7 +637,7 @@ width: 30%;
 }
 
 .banner h1 {
-  font-size: 3vw;
+  font-size: 20px;
   color: #22ffb3;
   margin-bottom: 10px;
   line-height: 80%;
@@ -647,14 +646,14 @@ width: 30%;
 
 .titlepcontent  {
   margin-bottom: 10px;
-  font-size: 2vh;
+  font-size: 15px;
   line-height: 90%;
   color: #ffffff;
   text-align: end;
 }
 .titlepcontent2{
   color: #00af89;
-  font-size: 2vh;
+  font-size: 15px;
   line-height: 90%;
 }
 .banner .benefits {
@@ -662,7 +661,9 @@ width: 30%;
   justify-content: space-between;
   margin-top: 2%;
 }
-
+.banner p{
+  font-size: 10px;
+}
 .banner .benefitItem {
   text-align: center;
   flex: 1;
@@ -675,7 +676,7 @@ width: 30%;
 }
 
 .banner .benefitItem h3 {
-  font-size: 1vw;
+  font-size: 10px;
   margin-bottom: 5px;
 }
 
@@ -686,11 +687,11 @@ width: 30%;
   color: #0d2747;
   border: none;
   border-radius: 30px;
-  font-size: 2vh;
+  font-size: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
   position: relative;
-  left: 45%;
+  left: 50%;
 
 }
 
@@ -1901,7 +1902,22 @@ padding: 1%;
 }
 @media (max-width: 668px) {
   .containerbaner{
-height: 1030px;
+height: 700px;
+.containerbaner {
+  /* Ajustamos el tamaño del contenedor */
+  position: relative; /* Necesario para que los elementos hijos con position: absolute se ubiquen dentro de este */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  width: 100%;
+  
+  background-image:
+      /* Mitad superior azul oscuro */
+      linear-gradient(to bottom, #0f1e36 0%, transparent 50%),
+      
+      /* Gradiente radial en la mitad inferior */
+      radial-gradient(50.16% 50.99% at 90% 100%, rgb(0, 0, 0) 100.1%, rgb(0, 0, 0) 100%);
+}
   }
 
   .banner {
@@ -1911,7 +1927,7 @@ height: 1030px;
     border-radius: 15px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;
+    height: 150%;
     position: relative;
     text-align: center;
   }
@@ -2101,6 +2117,7 @@ left: 0;
     }
     .vectorfull{
       display:grid;
+      margin-bottom: 26%;
     }
     .whytrias {
       display: flex;
