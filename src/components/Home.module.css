@@ -1726,12 +1726,21 @@ padding: 1%;
    }
    .walletconection img{
      position: relative;
-   top: -20vh;
+   top: -28vh;
    width: 30%;
    left: -1%;
    margin-bottom: 1%;
    text-align: center;
    }
+   .walletconection h4{
+    position: relative;
+  top: -28vh;
+  color: #00af89;
+  width: 100%;
+  font-size: 3vw;
+  line-height: 0%;
+  text-align: center;
+  }
    .conection h2{
      position: relative;
    top: 2%;
@@ -1754,15 +1763,7 @@ padding: 1%;
      line-height: 0%;
      text-align: center;
    }
-   .walletconection h4{
-     position: relative;
-   top: -20vh;
-   color: #00af89;
-   width: 100%;
-   font-size: 2vw;
-   line-height: 0%;
-   text-align: center;
-   }
+
    .fases {
      display: flex;
      flex-direction: column;
@@ -1999,6 +2000,7 @@ left: 0;
   }
 }
 @media (max-width: 768px) {
+ 
   .cuerpo p{
     text-align: start;
     width: 30%;
@@ -2270,7 +2272,7 @@ left: 0;
 }
 @media (max-width: 968px) {
 .container4{
-  height: 450vh;
+  height: 110rem;
 }
 .conection{
   height: 59%;
