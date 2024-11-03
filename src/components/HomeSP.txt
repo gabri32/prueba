@@ -767,4 +767,4 @@ Meta 5.
   );
 };
 
-export default Homees;
+export default Home;
