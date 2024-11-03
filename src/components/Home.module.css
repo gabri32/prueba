@@ -2091,7 +2091,7 @@ left: 0;
     gap: 10px; /* Espaciado entre tarjetas */
   align-items: center;
     position: relative;
-    left: 23%;
+    left: 28%;
     font-size: 0px;
    
   }
@@ -2108,7 +2108,7 @@ left: 0;
   .titulos{
     width: 50%;
     position: relative;
-    left: 30%;
+    left: 27%;
   }
 
  

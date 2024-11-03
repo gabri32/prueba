@@ -44,7 +44,7 @@ import { Menubar } from 'primereact/menubar';
 import { Button } from 'primereact/button';
 import { useEffect, useRef } from 'react';
 import roadmap from './RoadMap.png';
-const Home: React.FC = () => {
+const Homees: React.FC = () => {
   const items = [
     { label: 'Roadmap', icon: 'pi pi-fw pi-map', url: '#roadmap' },
     { label: 'Prevente', icon: 'pi pi-fw pi-tags', url: '#prevente' },
@@ -767,4 +767,4 @@ Meta 5.
   );
 };
 
-export default Home;
+export default Homees;
