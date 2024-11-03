@@ -433,10 +433,17 @@ a:hover {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-  height: 150vh; /* Asegúrate de tener una altura definida */
   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
   align-items: center;       /* Alinea los elementos horizontalmente al centro */
-  text-align: center;   
+  text-align: center; 
+  padding-bottom: 15%;  
+}
+/* FIN Contenedor del acordeón */
+
+.container3 img{
+  position: relative;
+width: 79%;
+padding-bottom: 8%;
 }
 .contenerdoble {
   /* Definir el tamaño y posición del fondo */
@@ -574,22 +581,7 @@ width: 80%;
   transform: rotate(180deg);
 }
 
-/* FIN Contenedor del acordeón */
-.container3_2{
-  position:relative;
-  width: 100%;
-  top:0%;
-  justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-  align-items: center;       /* Alinea los elementos horizontalmente al centro */
-  text-align: center;    
-}
-.container3_2 img{
 
-width: 70%;
-   justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-  align-items: center;       /* Alinea los elementos horizontalmente al centro */
-  text-align: center;    
-}
 .vectorfull{
   display: block;
 }
@@ -1591,103 +1583,20 @@ padding: 1%;
 .socialIcons a img:hover {
   transform: scale(1.1);
 }
-@media (max-width: 968px) {
 
-  .walletconection{
-    width: 60%;
-    height: 30%;
-    position: relative;
-    left: 20%;  
-    background-color: #ffffff00;
-   align-items: center;
-   text-align: center;  
-   justify-content: center; 
-   top: 6%;
-   font-size: 2vh;
-   }
-  
-    .container3 {
-      background-image: 
-        linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
-        url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-      background-position: center; /* Centra la imagen */
-      background-repeat: no-repeat; /* Evita repetición */
-      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-      height: 160vh; /* Asegúrate de tener una altura definida */
-      justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-      align-items: center;       /* Alinea los elementos horizontalmente al centro */
-      text-align: center;   
-    }
-   .container2{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 1050px; /* Alto completo de la pantalla */
-    background-color: #093763; /* Color de fondo base */
-    
+@media (max-width: 468px) {
+  .container3 {
     background-image: 
-     
-      url('2.png'); /* Imagen de fondo */
-  
+      linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
+      url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repetición */
-    background-size: cover; /* Imagen cubre todo el contenedor */
-    color: #fff;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+    align-items: center;       /* Alinea los elementos horizontalmente al centro */
+    text-align: center;   
   }
-    .container4 {
-      background-image: 
-          /* Primer gradiente (arriba derecha) */
-          linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
-          /* Segundo gradiente (arriba izquierda) */
-          linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
-          /* Imagen de fondo */
-          url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-          flex-direction: column; 
-      background-position: center; /* Centra la imagen */
-      background-repeat: no-repeat; /* Evita repetición */
-      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-      
-      height: 500vh; /* Asegúrate de tener una altura definida */
-      
-      display: flex; /* Habilita flexbox */
-      flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-      justify-content: center; /* Centra el contenido verticalmente */
-      text-align: center; /* Alinea el texto horizontalmente */
-    }
-    .section {
-      background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);
-      padding: 1.5em;
-      border-radius: 8px;
-      margin-bottom: 1.5em;
-      width: 100%;
-      left: 0%;
-      position: relative;
-    }
-    
-    .section2{
-      padding: 1.5em;
-      border-radius: 8px;
-      margin-bottom: 1.5em;
-      width: 100%;
-      left: 0%;
-      position: relative;
-    }
-    .goal {
-      background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);  padding: 1em;
-      border-radius: 8px;
-      width: 100vh;
-      flex-basis: 30%;
-    }
-    .container3_2{
-      position:relative;
-      width: 100%;
-      top:0%;
-      justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-      align-items: center;       /* Alinea los elementos horizontalmente al centro */
-      text-align: center;    
-    }
-}
-@media (max-width: 468px) {
+
   .container4 {
     background-image: 
         /* Primer gradiente (arriba derecha) */
@@ -1762,6 +1671,7 @@ padding: 1%;
   .containerbaner{
 height: 1030px;
   }
+
   .banner {
  left: 50%;
     display: grid;
@@ -1948,14 +1858,7 @@ left: 0;
     left: 25%;
   }
 
-  .container3_2{
-    position:relative;
-    width: 100%;
-    top:0%;
-    justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
-    align-items: center;       /* Alinea los elementos horizontalmente al centro */
-    text-align: center;    
-  }
+ 
   .container3_2 img{
     top: 10%;
     width: 89%;
@@ -1964,7 +1867,7 @@ left: 0;
       text-align: center;    
     }
     .vectorfull{
-      display: block;
+      display:grid;
     }
     .whytrias {
       display: flex;
@@ -2095,10 +1998,15 @@ left: 0;
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repetición */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
-    height: 50vh; /* Asegúrate de tener una altura definida */
     justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
     align-items: center;       /* Alinea los elementos horizontalmente al centro */
     text-align: center;   
+  }
+  .container3 img{
+    position: relative;
+  width: 79%;
+  padding-bottom: 8%;
+  left: 10%;
   }
   .level1, .level2, .level3 {
     background-color: #04F1A9;
@@ -2133,4 +2041,96 @@ left: 0;
     color: #ffffff;
     font-size: 3vw;
   }
+}
+@media (max-width: 968px) {
+
+  .walletconection{
+    width: 60%;
+    height: 30%;
+    position: relative;
+    left: 20%;  
+    background-color: #ffffff00;
+   align-items: center;
+   text-align: center;  
+   justify-content: center; 
+   top: 6%;
+   font-size: 2vh;
+   }
+  
+    .container3 {
+      background-image: 
+        linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #0bebc2bf),
+        url('./fondo 3 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita repetición */
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+      justify-content: center;   /* Centra verticalmente el contenido dentro del contenedor */
+      align-items: center;       /* Alinea los elementos horizontalmente al centro */
+      text-align: center;   
+    }
+   .container2{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 1250px; /* Alto completo de la pantalla */
+    background-color: #093763; /* Color de fondo base */
+    
+    background-image: 
+     
+      url('2.png'); /* Imagen de fondo */
+  
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-size: cover; /* Imagen cubre todo el contenedor */
+    color: #fff;
+  }
+    .container4 {
+      background-image: 
+          /* Primer gradiente (arriba derecha) */
+          linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #0bebc28a),
+          /* Segundo gradiente (arriba izquierda) */
+          linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, rgba(128, 0, 255, 0.379)),
+          /* Imagen de fondo */
+          url('./niebla 1.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
+          flex-direction: column; 
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita repetición */
+      background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+      
+      height: 500vh; /* Asegúrate de tener una altura definida */
+      
+      display: flex; /* Habilita flexbox */
+      flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+      justify-content: center; /* Centra el contenido verticalmente */
+      text-align: center; /* Alinea el texto horizontalmente */
+    }
+    .section {
+      background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      width: 100%;
+      left: 0%;
+      position: relative;
+    }
+    .container3 img{
+      position: relative;
+width: 79%;
+padding-bottom: 10%;
+    }
+    .section2{
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 1.5em;
+      width: 100%;
+      left: 0%;
+      position: relative;
+    }
+    .goal {
+      background: radial-gradient(68.76% 173.25% at 57.14% -45.5%, rgba(11, 51, 111, 0.9) 0%, rgba(4, 15, 33, 0.9) 100%);  padding: 1em;
+      border-radius: 8px;
+      width: 100vh;
+      flex-basis: 30%;
+    }
+  
 }
