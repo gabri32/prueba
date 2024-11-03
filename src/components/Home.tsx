@@ -442,8 +442,7 @@ const Home: React.FC = () => {
         <div className={styles.progressbar} id="progress-bar"></div>
     </div>
         </div>
-        <div>
-          <br />
+        <div className={styles.th}>
           <span>1 $THT = $0.12 USD</span>
          </div>
          <div className={styles.buyToken}>
@@ -459,7 +458,6 @@ const Home: React.FC = () => {
           <input type="text" placeholder="Monto recibido" />
         </div>
       </div>
-<br />
       <button className={styles.connectButton}>CONECTAR WALLET</button>
       <p className={styles.commission}>Comisión a wallet 10%</p>
           </div>
