@@ -813,15 +813,20 @@ width: 150%;
   position: relative;
   left: 10%;
   top: 8%;
+  padding: 0%;
 }
 
 .progressbar {
-
+position: relative;
   height: 30px;
   width: 70%; /* Comienza con 0% de ancho */
   background-color: #04F1A9; /* Color verde */
   transition: width 0.5s ease; /* Transición suave al cambiar el ancho */
 }
+.th{
+  margin-top: 40px;
+  font-size: 4vh;
+ }
 .walletconection img{
   position: relative;
 top: -20vh;
@@ -1718,7 +1723,7 @@ padding: 1%;
    }
    
    .progressbar {
-   
+   position: relative;
      height: 18px;
      width: 70%; /* Comienza con 0% de ancho */
      background-color: #04F1A9; /* Color verde */
