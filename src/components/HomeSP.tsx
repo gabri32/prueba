@@ -414,7 +414,8 @@ const Home: React.FC = () => {
 
             </div>
 
-            <button className={styles.ctaButton}>QUIERO SER VALIDADOR</button>
+            <a href="#services">
+            <button className={styles.ctaButton}>QUIERO SER VALIDADOR</button></a>  
 
           </div>
 

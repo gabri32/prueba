@@ -394,13 +394,13 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <button className={styles.ctaButton}>I WANT TO BE A VALIDATOR</button>
+      <a href="#services"><button className={styles.ctaButton} >I WANT TO BE A VALIDATOR</button></a>
     </div>
   </div>
 </div>
 
 <div className={styles.container4}>
-  <div className={styles.walletconection}>
+<div className={styles.walletconection} id="services">
     <img src={letterTrainsImage} alt="Traishunt Logo" />
 
     <div><h4>PRESALE</h4></div>
