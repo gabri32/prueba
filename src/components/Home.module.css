@@ -609,7 +609,7 @@ width: 80%;
   border-radius: 15px;
   padding: 30px;
   width: 80%;
-  max-width: 1200px;
+  max-height: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: absolute; /* Esto hará que flote dentro del contenedor padre */
   top: 50%; /* Centra verticalmente */
@@ -713,7 +713,7 @@ width: 30%;
   background-repeat: no-repeat; /* Evita repetición */
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
   
-  height: 2000px; /* Asegúrate de tener una altura definida */
+  height: 2200px; /* Asegúrate de tener una altura definida */
   
   display: flex; /* Habilita flexbox */
   flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
@@ -825,7 +825,7 @@ position: relative;
 }
 .th{
   margin-top: 40px;
-  font-size: 4vh;
+  font-size: 13px;
  }
 .walletconection img{
   position: relative;
@@ -872,7 +872,7 @@ text-align: center;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 200px;
 
 
 }
@@ -1465,7 +1465,7 @@ padding: 1%;
   font-weight: bold;
   background: #0000;
   display: flex;
-  font-size: 2vh;
+  font-size: 15px;
 }
 .faq2 details {
   background: #101A3E;
@@ -1473,7 +1473,7 @@ padding: 1%;
   margin: 10px 0;
   border-radius: 5px;
   overflow: hidden;
-  font-size: 2vh;
+  font-size: 20px;
   padding: 4%;
   text-align: start;
   display: flex;
@@ -1485,7 +1485,7 @@ padding: 1%;
   margin: 10px 0;
   border-radius: 5px;
   overflow: hidden;
-  font-size: 2vh;
+  font-size: 15px;
   text-align: end;
 }
 .faq2 p{
@@ -1493,7 +1493,7 @@ padding: 1%;
   position: relative;
   margin: 20px auto;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 15px;
   left: -21%;
 }
 .cantidad{
