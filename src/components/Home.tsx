@@ -177,7 +177,7 @@ const Home: React.FC = () => {
           <br />
           <button className={styles.custombutton}>
             <div className={styles.buttoncontent}>
-              <div className={styles.phase}>Phase 1 - Holders <br /><span>0.1 to 0.25</span></div>
+              <div className={styles.phase}>Phase 1 - Holders <br /><span>0.2 to 0.25</span></div>
               <div className={styles.divider}></div>
               <div className={styles.tokens}>150,000 <br /> TOKENS</div>
             </div>
